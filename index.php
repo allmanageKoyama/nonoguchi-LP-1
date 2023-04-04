@@ -96,35 +96,18 @@
       </div>
       <nav class="drawer-nav">
         <ul class="drawer-menu main_menu">
-          <li><a href="https://www.nonoguchi.net/">
-              <p class="en">Top Page</p><span>トップページ</span>
+          <li class="nav-item"><a href="#section-01">
+              <p class="en">MESSAGE</p><span>メッセージ</span>
             </a></li>
-          <li><a href="https://www.nonoguchi.net/company/">
-              <p class="en">Company</p><span>会社案内</span>
-            </a></li>
-          <li><a href="https://www.nonoguchi.net/business/">
-              <p class="en">Business</p><span>事業案内</span>
-            </a></li>
-          <li><a href="https://www.nonoguchi.net/products/">
-              <p class="en">Product</p><span>製品紹介</span>
-            </a></li>
-          <li><a href="https://www.nonoguchi.net/recruit/">
-              <p class="en">Recruit</p><span>採用情報</span>
-            </a></li>
-          <li><a href="https://www.nonoguchi.net/news/">
-              <p class="en">News</p><span>新着情報</span>
-            </a></li>
-          <li><a href="https://www.nonoguchi.net/privacy/">
-              <p class="en">Privacy</p><span>プライバシーポリシー</span>
-            </a></li>
-          <li>
-            <ul class="sub_menu">
-              <li><a href="https://www.nonoguchi.net/order/"><span>注文フォーム</span></a></li>
-              <li><a href="https://www.nonoguchi.net/stock/"><span>在庫確認フォーム</span></a></li>
-              <li><a href="https://www.nonoguchi.net/contact/"><span>問い合わせ</span></a></li>
-              <li><a href="https://www.nonoguchi.net/cloth/"><span>生地サンプル依頼</span></a></li>
-              <li class="tel"><a href="tel:0662641161"><span>06-6264-1161</span></a></li>
-            </ul>
+          <li class="nav-item"><a href="#section-02"><p class="en">IDEAL CANDIDATE</p><span>求める人物像</span></a></li>
+          <li class="nav-item"><a href="#section-03"><p class="en">MEMBER</p><span>野々口の人々</span></a></li>
+          <li class="nav-item"><a href="#section-04"><p class="en">WORK LIFE BALANCE</p><span>ワークライフ</span></a></li>
+          <li class="nav-item"><a href="#section-05"><p class="en">COMPANY SCENERY</p><span>社内風景</span></a></li>
+          <li class="nav-item"><a href="#section-06"><p class="en">REQUIREMENTS</p><span>募集要項</span></a></li>
+
+          <ul class="sub_menu">
+            <li class="nav-item"><a href="#entry"><span>ENTRY</span></a></li>
+          </ul>
           </li>
         </ul>
       </nav>
@@ -228,13 +211,13 @@
                   <div class="contetnts is-set">
                     <?php
                     $persons = [
-                      ['01', '営業', '0001','Q入社から今に至る経緯と入社後について','インターネット求人で見つけ、面接に来てみると、和やかな面接で自分に合っていると思い入社を決意しました。<br>
+                      ['01', '営業', '0001', 'Q入社から今に至る経緯と入社後について', 'インターネット求人で見つけ、面接に来てみると、和やかな面接で自分に合っていると思い入社を決意しました。<br>
                       入社後は、円滑に業務を進めていく上で不可欠なDX化に向けて新しいアイディアなどを提案し、実際に取り入れていただきました。少数精鋭かつ発展途上の会社であり、業務改善に積極的で社員の意見をしっかり聞いていただける、今まで社内で誰もやった事がないようなことでも失敗を恐れずにチャレンジできる環境だと思います。'],
-                      ['02', '営業', '0002','Q入社から今に至る経緯と入社後について','インターネット求人で見つけ、面接に来てみると、和やかな面接で自分に合っていると思い入社を決意しました。<br>
+                      ['02', '営業', '0002', 'Q入社から今に至る経緯と入社後について', 'インターネット求人で見つけ、面接に来てみると、和やかな面接で自分に合っていると思い入社を決意しました。<br>
                       入社後は、円滑に業務を進めていく上で不可欠なDX化に向けて新しいアイディアなどを提案し、実際に取り入れていただきました。少数精鋭かつ発展途上の会社であり、業務改善に積極的で社員の意見をしっかり聞いていただける、今まで社内で誰もやった事がないようなことでも失敗を恐れずにチャレンジできる環境だと思います。'],
-                      ['03', '営業', '0003','Q入社から今に至る経緯と入社後について','インターネット求人で見つけ、面接に来てみると、和やかな面接で自分に合っていると思い入社を決意しました。<br>
+                      ['03', '営業', '0003', 'Q入社から今に至る経緯と入社後について', 'インターネット求人で見つけ、面接に来てみると、和やかな面接で自分に合っていると思い入社を決意しました。<br>
                       入社後は、円滑に業務を進めていく上で不可欠なDX化に向けて新しいアイディアなどを提案し、実際に取り入れていただきました。少数精鋭かつ発展途上の会社であり、業務改善に積極的で社員の意見をしっかり聞いていただける、今まで社内で誰もやった事がないようなことでも失敗を恐れずにチャレンジできる環境だと思います。'],
-                      ['04', '営業', '0004','Q入社から今に至る経緯と入社後について','インターネット求人で見つけ、面接に来てみると、和やかな面接で自分に合っていると思い入社を決意しました。<br>
+                      ['04', '営業', '0004', 'Q入社から今に至る経緯と入社後について', 'インターネット求人で見つけ、面接に来てみると、和やかな面接で自分に合っていると思い入社を決意しました。<br>
                       入社後は、円滑に業務を進めていく上で不可欠なDX化に向けて新しいアイディアなどを提案し、実際に取り入れていただきました。少数精鋭かつ発展途上の会社であり、業務改善に積極的で社員の意見をしっかり聞いていただける、今まで社内で誰もやった事がないようなことでも失敗を恐れずにチャレンジできる環境だと思います。'],
                     ]
                     ?>
@@ -252,21 +235,21 @@
                       </div>
                     <?php endforeach; ?>
                     <?php foreach ($persons as $content) : ?>
-                    <div class="message-box" id="person-<?php echo $content[0]; ?>">
-                      <div class="img-box">
-                        <img src="src/img/person-<?php echo $content[0]; ?>_detail.png" alt="">
-                      </div>
-                      <div class="contents-box">
-                        <div class="inner">
-                          <h4><span class="position"><?php echo $content[1]; ?></span><span class="join"><?php echo $content[2]; ?>年入社</span></h4>
-                          <h5><?php echo $content[3]; ?></h5>
-                          <p class="text"><?php echo $content[4]; ?></p>
-                          <div class="btn_area close">
-                            <div class="btn">閉じる</div>
+                      <div class="message-box" id="person-<?php echo $content[0]; ?>">
+                        <div class="img-box">
+                          <img src="src/img/person-<?php echo $content[0]; ?>_detail.png" alt="">
+                        </div>
+                        <div class="contents-box">
+                          <div class="inner">
+                            <h4><span class="position"><?php echo $content[1]; ?></span><span class="join"><?php echo $content[2]; ?>年入社</span></h4>
+                            <h5><?php echo $content[3]; ?></h5>
+                            <p class="text"><?php echo $content[4]; ?></p>
+                            <div class="btn_area close">
+                              <div class="btn">閉じる</div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
                     <?php endforeach; ?>
                   </div>
 
@@ -330,7 +313,7 @@
                       ];
                       ?>
                       <?php foreach ($allowances as $value) : ?>
-                        <dd>
+                        <dd class="is-set">
                           <span><?php echo $value[0]; ?></span>
                           <span><?php echo $value[1]; ?></span>
                           <span><?php echo $value[2]; ?></span>
@@ -356,14 +339,14 @@
                 </div>
                 <div class="container">
                   <dl>
-                    <dd><img src="src/img/btn.png" alt="">社会保険完備</dd>
-                    <dd><img src="src/img/btn.png" alt="">社員旅行</dd>
-                    <dd><img src="src/img/btn.png" alt="">退職金制度</dd>
-                    <dd><img src="src/img/btn.png" alt="">健康診断</dd>
-                    <dd><img src="src/img/btn.png" alt="">社員交流会<span>（食事会など/自由参加）</span></dd>
-                    <dd><img src="src/img/btn.png" alt="">分煙</dd>
-                    <dd><img src="src/img/btn.png" alt="">コーヒーサーバー<br>設置有</dd>
-                    <dd><img src="src/img/btn.png" alt="">服装自由<span>オフィスカジュアル、<br>髪型自由、ネイルOK</span></dd>
+                    <dd class="is-set"><img src="src/img/btn.png" alt="">社会保険完備</dd>
+                    <dd class="is-set"><img src="src/img/btn.png" alt="">社員旅行</dd>
+                    <dd class="is-set"><img src="src/img/btn.png" alt="">退職金制度</dd>
+                    <dd class="is-set"><img src="src/img/btn.png" alt="">健康診断</dd>
+                    <dd class="is-set"><img src="src/img/btn.png" alt="">社員交流会<span>（食事会など/自由参加）</span></dd>
+                    <dd class="is-set"><img src="src/img/btn.png" alt="">分煙</dd>
+                    <dd class="is-set"><img src="src/img/btn.png" alt="">コーヒーサーバー<br>設置有</dd>
+                    <dd class="is-set"><img src="src/img/btn.png" alt="">服装自由<span>オフィスカジュアル、<br>髪型自由、ネイルOK</span></dd>
                   </dl>
                 </div>
               </section>
@@ -597,7 +580,7 @@
             $('.section-03 .contetnts').removeClass('is-detail')
             $(this).removeClass('is-select')
             $(this).removeAttr('style')
-           $('.message-box').removeClass('set')
+            $('.message-box').removeClass('set')
           } else {
             $('.section-03 .contetnts').addClass('is-detail')
             $(this).css('z-index', '100')
@@ -606,12 +589,19 @@
             $('#person-' + box).addClass('set')
           }
         })
-        $('.message-box .btn').on('click',function(){
+        $('.message-box .btn').on('click', function() {
           $('.section-03 .contetnts').removeClass('is-detail')
           $('.message-box').removeClass('set')
           $('.section-03 .contetnts .pnl').removeClass('is-select')
           $('.section-03 .contetnts .pnl').removeAttr('style')
         })
+        $(".section-06").on("inview", function(event, isInView) {
+          if (isInView) {
+            $('.section-07 .is-set').removeClass("is-action");
+          } else {
+            $('.section-07 .is-set').addClass("is-action");
+          }
+        });
       </script>
     </div>
   </div>

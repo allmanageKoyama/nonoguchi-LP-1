@@ -7,7 +7,6 @@ html {
 header {
   background-color: $blue;
 
-  background-color: $blue;
   .inner {
     max-width: 100%;
     width: 100%;
@@ -17,6 +16,10 @@ header {
     opacity: 0;
     transition: 1.5s;
     transition-delay: 1.5s;
+    @media screen and (max-width: 991px) {
+      background-color: $blue;
+      opacity: 1;
+    }
   }
   .logo_area {
     width: fit-content;
@@ -95,6 +98,11 @@ header {
   }
 }
 .under {
+  .main_sec {
+    @media screen and (max-width: 768px) {
+      padding-top: 0;
+    }
+  }
   .mv {
     background: $blue;
     height: calc(100svh - 80px);
@@ -143,6 +151,9 @@ header {
         transform: translateY(20svh);
         transition: 0.6s;
         transition-delay: 1s;
+        @media screen and (max-width: 768px) {
+          @include w_size(440, 100);
+        }
       }
       .cast {
         display: flex;
@@ -151,6 +162,9 @@ header {
         left: 0;
         width: 100%;
         z-index: 3;
+        @media screen and (max-width: 768px) {
+          @include top(440, 50);
+        }
         span {
           transform: translateY(15svh);
           transition: 0.6s;
@@ -161,6 +175,9 @@ header {
             margin-left: 10px;
             padding-top: 50px;
             transition-delay: 2s;
+            @media screen and (max-width: 768px) {
+              @include mr(440, 10);
+            }
             img {
               opacity: 0;
               transition: 0.6s;
@@ -171,6 +188,10 @@ header {
             padding-top: 30px;
             margin-right: 300px;
             transition-delay: 1.8s;
+            @media screen and (max-width: 768px) {
+              @include mr(440, 100);
+              margin-right: 10svw;
+            }
             img {
               opacity: 0;
               transition: 0.6s;
@@ -210,6 +231,12 @@ header {
         left: 0;
         width: 100%;
         z-index: 3;
+        @media screen and (max-width: 991px) {
+          top: 50svh;
+        }
+        @media screen and (max-width: 768px) {
+          @include top(440, 250);
+        }
         span {
           opacity: 0;
           transition: 0.6s;
@@ -234,8 +261,20 @@ header {
             top: -10svh;
             left: 31svh;
             transition-delay: 3.7s;
+            @media screen and (max-width: 991px) {
+              left: 15svh;
+            }
+            @media screen and (max-width: 768px) {
+              left: 1svh;
+            }
             img {
               transition-delay: 3.7s;
+            }
+            @media screen and (max-width: 600px) {
+              @include top(440, -50);
+            }
+            @media screen and (max-width: 440px) {
+              @include top(440, -40);
             }
           }
           &:nth-of-type(3) {
@@ -243,6 +282,19 @@ header {
             top: -4svh;
             left: 1svh;
             transition-delay: 3.9s;
+            @media screen and (max-width: 991px) {
+              top: -20svh;
+              left: 25svh;
+            }
+            @media screen and (max-width: 768px) {
+              left: 1svh;
+            }
+            @media screen and (max-width: 600px) {
+              @include top(440, -100);
+            }
+            @media screen and (max-width: 440px) {
+              @include top(440, -80);
+            }
             img {
               transition-delay: 3.9s;
             }
@@ -257,6 +309,9 @@ header {
     margin: 0 auto;
     margin-bottom: 50px;
     overflow: hidden;
+    @media screen and (max-width: 768px) {
+    @include mb(440,20);
+    }
     h2 {
       color: $blue;
       font-family: Impact;
@@ -264,11 +319,18 @@ header {
       letter-spacing: 0.05em;
       margin-bottom: 20px;
       font-weight: normal;
+      @media screen and (max-width: 768px) {
+      @include fontsizeVw(440,80);
+      @include mb(440,10);
+      }
     }
     .lead {
       font-size: 26px;
       font-family: "noto-sans-cjk-jp", sans-serif;
       font-weight: bold;
+      @media screen and (max-width: 768px) {
+        @include fontsizeVw(440,24);
+        }
     }
   }
   .text {
@@ -277,10 +339,19 @@ header {
     font-weight: 600;
     line-height: 2.2;
     padding-bottom: 30px;
+    @media screen and (max-width: 768px) {
+    @include fontsizeVw(440,24);
+    line-height: 1.6;
+    }
     strong {
       font-size: 36px;
       font-weight: bold;
       line-height: 1.8;
+      @media screen and (max-width: 768px) {
+        @include fontsizeVw(440,32);
+        text-align: justify;
+        line-height: 1.6;
+        }
     }
     &.is-set {
       transform: translate3d(0, 12svh, 0);
@@ -299,6 +370,13 @@ header {
     background-repeat: no-repeat, no-repeat;
     background-position: left bottom, right top;
     background-size: 50%, 50%;
+    @media screen and (max-width: 991px) {
+      @include pl(991, 30);
+      @include pr(991, 30);
+    }
+    @media screen and (max-width: 440px) {
+    @include pt(440,50);
+    }
     .ttl_wrap {
       overflow: hidden;
       h2 {
@@ -320,6 +398,9 @@ header {
       display: flex;
       width: 100%;
       padding: 0;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
       .contetnts {
         flex: 1;
       }
@@ -327,6 +408,12 @@ header {
         width: 470px;
         padding-left: 30px;
         transform: translateY(-100px);
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          transform: none;
+          @include pl(440, 30);
+          @include pr(440, 30);
+        }
         img {
           max-width: 100%;
           height: auto;
@@ -336,9 +423,19 @@ header {
   }
   .section-02 {
     background-image: url("../img/bg_box.svg");
+    @media screen and (max-width: 991px) {
+      @include pl(991, 30);
+      @include pr(991, 30);
+    }
     .container {
       position: relative;
       padding: 0;
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        width: 100%;
+      }
     }
     .ttl_wrap {
       overflow: hidden;
@@ -375,6 +472,15 @@ header {
       position: absolute;
       top: -20svh;
       left: -3svh;
+      @media screen and (max-width: 991px) {
+        width: 50%;
+        top: 0;
+        position: relative;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        left: 0;
+      }
       img {
         max-width: 100%;
         height: auto;
@@ -393,6 +499,12 @@ header {
           bottom: 4svh;
           left: 0;
           z-index: 2;
+          @media screen and (max-width: 991px) {
+            @include w_size(991, 200);
+          }
+          @media screen and (max-width: 768px) {
+            @include w_size(440, 150);
+          }
           &.is-set {
             transform: translate3d(0, 12svh, 0);
             transition: 0.8s;
@@ -410,6 +522,12 @@ header {
           z-index: 2;
           bottom: 10svh;
           right: 2svh;
+          @media screen and (max-width: 991px) {
+            @include w_size(991, 200);
+          }
+          @media screen and (max-width: 768px) {
+            @include w_size(440, 150);
+          }
           &.is-set {
             transform: translate3d(0, 12svh, 0);
             transition: 0.8s;
@@ -426,6 +544,17 @@ header {
     .contetnts {
       margin-left: auto;
       width: 540px;
+      @media screen and (max-width: 991px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        ul {
+          li {
+            @include fontsizeVw(440, 20);
+          }
+        }
+      }
     }
   }
   .section-03 {
@@ -436,6 +565,12 @@ header {
     background-repeat: no-repeat, no-repeat;
     background-position: left bottom, right top;
     background-size: 50%, 50%;
+    @media screen and (max-width: 991px) {
+      @include pl(991, 30);
+      @include pr(991, 30);
+      @include pt(991, 100);
+      @include pb(991, 60);
+    }
     .ttl_wrap {
       overflow: hidden;
       h2 {
@@ -467,14 +602,26 @@ header {
             &:nth-of-type(2) {
               top: 60px;
               left: calc(((100% - (27px * 3)) / 4) + 27px);
+              @media screen and (max-width: 768px) {
+                @include top(440, 30);
+                left: calc(((100% - (1.302vw * 1)) / 2) + 1.302vw);
+              }
             }
             &:nth-of-type(3) {
               top: 120px;
               left: calc((((100% - (27px * 3)) / 4) + 27px) * 2);
+              @media screen and (max-width: 768px) {
+                @include top(440, 370);
+                left: 0;
+              }
             }
             &:nth-of-type(4) {
               top: 180px;
               left: calc((((100% - (27px * 3)) / 4) + 27px) * 3);
+              @media screen and (max-width: 768px) {
+                @include top(440, 400);
+                left: calc(((100% - (1.302vw * 1)) / 2) + 1.302vw);
+              }
             }
           }
           &.is-detail {
@@ -484,6 +631,10 @@ header {
               background-color: $white;
               transition: 1.2s;
               transition-delay: 0.3s;
+              @media screen and (max-width: 768px) {
+                transform: scale(0.5);
+                transform-origin: top left;
+              }
             }
           }
         }
@@ -495,6 +646,10 @@ header {
         transition-timing-function: cubic-bezier(0.3, 0.4, 0.1, 1);
         transform: translateX(100%) skewX(-30deg);
         transition: 0.8s;
+        @media screen and (max-width: 768px) {
+          flex-wrap: wrap;
+          @include pb(440, 400);
+        }
       }
       .pnl {
         width: calc((100% - (27px * 3)) / 4);
@@ -502,15 +657,30 @@ header {
         transition-delay: 1.5s;
         transition-timing-function: cubic-bezier(0.3, 0.4, 0.1, 1);
         z-index: 5;
+        position: relative;
         cursor: pointer;
-        &:not(:last-child) {
-          margin-right: 27px;
+        @media screen and (max-width: 768px) {
+          width: calc((100% - (1.302vw * 1)) / 2);
+          &:nth-of-type(odd) {
+            margin-right: 1.302vw;
+          }
+        }
+        @media screen and (min-width: 768px) {
+          &:not(:last-child) {
+            margin-right: 27px;
+          }
+          &:not(:first-child) {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
         }
         &:not(:first-child) {
           position: absolute;
           top: 0;
           left: 0;
         }
+
         &:nth-of-type(2) {
           z-index: 6;
         }
@@ -594,6 +764,17 @@ header {
         margin-left: 300px;
         opacity: 0;
         transition: 1.2s;
+        @media screen and (max-width: 991px) {
+          @include ml(991, 200);
+        }
+        @media screen and (max-width: 768px) {
+          margin-left: 0;
+          @include top(440, 150);
+          @include pl(440, 15);
+          @include pr(440, 15);
+          @include h_size(440, 600);
+          flex-direction: column;
+        }
         &.set {
           opacity: 1;
           z-index: 99 !important;
@@ -614,6 +795,12 @@ header {
         }
         .img-box {
           width: 300px;
+          @media screen and (max-width: 991px) {
+            @include w_size(991, 300);
+          }
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
           img {
             max-width: 100%;
             height: auto;
@@ -625,6 +812,13 @@ header {
           padding-left: 30px;
           height: 400px;
           overflow: auto;
+          @media screen and (max-width: 991px) {
+            @include h_size(991, 400);
+          }
+          @media screen and (max-width: 768px) {
+            padding-left: 0;
+            @include h_size(440, 50);
+          }
           h4 {
             display: flex;
             margin-bottom: 20px;
@@ -676,7 +870,15 @@ header {
   .section-04 {
     padding-top: 170px;
     padding-bottom: 150px;
-
+    @media screen and (max-width: 991px) {
+      @include pl(991, 30);
+      @include pr(991, 30);
+      @include pt(991, 100);
+      @include pb(991, 150);
+    }
+    @media screen and (max-width: 768px) {
+    @include pb(440,150);
+    }
     .ttl_wrap {
       overflow: hidden;
       h2,
@@ -711,6 +913,9 @@ header {
           bottom: -152px;
           left: 0;
           width: 125px;
+          @media screen and (max-width: 768px) {
+          @include w_size(440,100);
+          }
         }
         dl {
           border-bottom: 4px solid $blue;
@@ -726,6 +931,11 @@ header {
             padding-bottom: 80px;
             line-height: 1.2;
             position: relative;
+            @media screen and (max-width: 991px) {
+              @include fontsizeVw(991, 32);
+              @include pt(991, 60);
+              @include pb(991, 60);
+            }
             &:not(:last-child) {
               border-right: 4px solid $blue;
             }
@@ -773,6 +983,12 @@ header {
                 line-height: 1;
                 overflow: hidden;
                 position: relative;
+                @media screen and (max-width: 991px) {
+                  @include fontsizeVw(991, 80);
+                }
+                @media screen and (max-width: 768px) {
+                @include pl(440,10);
+                }
                 span {
                   display: inline-block;
                   transform: translateY(110%);
@@ -787,6 +1003,9 @@ header {
               }
               &.strong {
                 font-size: 60px;
+                @media screen and (max-width: 991px) {
+                  @include fontsizeVw(991, 50);
+                }
               }
             }
           }
@@ -814,10 +1033,16 @@ header {
                 span {
                   font-family: "noto-sans-cjk-jp", sans-serif;
                   font-size: 40px;
+                  @media screen and (max-width: 991px) {
+                    @include fontsizeVw(991, 32);
+                  }
                   &.move {
                     span {
                       font-size: 60px;
                       font-weight: bold;
+                      @media screen and (max-width: 991px) {
+                        @include fontsizeVw(991, 40);
+                      }
                     }
                   }
                 }
@@ -833,6 +1058,9 @@ header {
                   font-size: 60px;
                   font-weight: 600;
                   padding-left: 0;
+                  @media screen and (max-width: 991px) {
+                    @include fontsizeVw(991, 40);
+                  }
                 }
               }
             }
@@ -856,10 +1084,16 @@ header {
                 span {
                   font-family: "noto-sans-cjk-jp", sans-serif;
                   font-size: 40px;
+                  @media screen and (max-width: 991px) {
+                    @include fontsizeVw(991, 32);
+                  }
                   &.move {
                     span {
                       font-size: 60px;
                       font-weight: bold;
+                      @media screen and (max-width: 991px) {
+                        @include fontsizeVw(991, 60);
+                      }
                     }
                   }
                 }
@@ -877,12 +1111,20 @@ header {
     background-image: url("../img/bg_section5.png");
     background-size: cover;
     position: relative;
+    @media screen and (max-width: 991px) {
+      padding-bottom: 0;
+      @include pt(768, 100);
+    }
     .icon {
       position: absolute;
       top: -242px;
       right: 0;
       width: 192px;
       z-index: 1;
+      @media screen and (max-width: 768px) {
+        @include w_size(440, 80);
+        @include top(440, -80);
+      }
     }
     .ttl_wrap {
       overflow: hidden;
@@ -893,6 +1135,9 @@ header {
       h2 {
         transform: translateY(-110%);
         transition: 0.9s 0.2s cubic-bezier(0.3, 0.4, 0.1, 1);
+        @media screen and (max-width: 768px) {
+        @include fontsizeVw(440,65);
+        }
         &.is-action {
           transform: translateY(0);
         }
@@ -928,19 +1173,48 @@ header {
             width: calc(100% / 3);
             color: $blue;
             background-color: $white;
+            @media screen and (max-width: 768px) {
+              @include fontsizeVw(440, 22);
+              @include pt(440, 10);
+              @include pb(440, 20);
+            }
             &:nth-of-type(odd) {
               background-color: $blue;
               color: $white;
             }
             span {
               text-align: center;
+              opacity: 0;
+              transition: 0.9s 0.3s cubic-bezier(0.3, 0.4, 0.1, 1);
               &:nth-of-type(1) {
                 font-family: Impact;
                 font-weight: 500;
                 font-size: 60px;
+                @media screen and (max-width: 768px) {
+                  @include fontsizeVw(440, 36);
+                }
               }
               &:nth-of-type(3) {
                 font-size: 26px;
+                @media screen and (max-width: 768px) {
+                  @include fontsizeVw(440, 12);
+                }
+              }
+            }
+
+            &.is-action {
+              span {
+                opacity: 1;
+              }
+            }
+            &:nth-of-type(2n) {
+              span {
+                transition-delay: 0.5s;
+              }
+            }
+            &:nth-of-type(3n) {
+              span {
+                transition-delay: 0.8s;
               }
             }
           }
@@ -954,6 +1228,12 @@ header {
     background-image: url("../img/bg_sectino6.png");
     background-size: cover;
     position: relative;
+    @media screen and (max-width: 991px) {
+      @include pl(991, 30);
+      @include pr(991, 30);
+      @include pt(991, 100);
+      @include pb(991, 60);
+    }
     .ttl_wrap {
       overflow: hidden;
       h2,
@@ -978,10 +1258,17 @@ header {
     .container {
       width: 100%;
       padding: 0;
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
       dl {
         display: flex;
         flex-wrap: wrap;
         padding-top: 100px;
+        @media screen and (max-width: 768px) {
+          @include pt(440, 30);
+        }
         dd {
           width: calc((100% - 6px) / 4);
           height: 200px;
@@ -997,17 +1284,74 @@ header {
           flex-direction: column;
           text-align: center;
           margin-bottom: 2px;
-          &:not(:nth-of-type(4n)) {
-            margin-right: 2px;
+          @media screen and (max-width: 768px) {
+            @include fontsizeVw(440, 22);
+            width: calc((100% - 3px) / 2);
+            &:not(:nth-of-type(2n)) {
+              margin-right: 2px;
+            }
           }
+          @media screen and (min-width: 768px) {
+            &:not(:nth-of-type(4n)) {
+              margin-right: 2px;
+            }
+          }
+
           span {
             font-size: 16px;
+            @media screen and (max-width: 768px) {
+              @include fontsizeVw(440, 14);
+            }
           }
           img {
             width: 56px;
             position: absolute;
             top: 10px;
             right: 10px;
+            transition: 0.3s;
+            transition-duration: 0.8s;
+            transform: scale(0);
+            transition-timing-function: cubic-bezier(0, 0, 0.26, 2.07);
+          }
+          &.is-action {
+            img {
+              transform: scale(1);
+            }
+          }
+          &:nth-of-type(2) {
+            img {
+              transition-delay: 0.4s;
+            }
+          }
+          &:nth-of-type(3) {
+            img {
+              transition-delay: 0.5s;
+            }
+          }
+          &:nth-of-type(4) {
+            img {
+              transition-delay: 0.65s;
+            }
+          }
+          &:nth-of-type(5) {
+            img {
+              transition-delay: 0.7s;
+            }
+          }
+          &:nth-of-type(6) {
+            img {
+              transition-delay: 0.8s;
+            }
+          }
+          &:nth-of-type(7) {
+            img {
+              transition-delay: 0.9s;
+            }
+          }
+          &:nth-of-type(8) {
+            img {
+              transition-delay: 1s;
+            }
           }
         }
       }
@@ -1022,6 +1366,17 @@ header {
         top: 150px;
         right: 0;
         width: 1000px;
+        @media screen and (max-width: 991px) {
+          @include w_size(991, 450);
+          width: 50%;
+          @include pl(991, 50);
+        }
+        @media screen and (max-width: 768px) {
+          position: relative;
+          top: 0;
+          width: 100%;
+          padding-left: 0;
+        }
         img {
           max-width: 100%;
           height: auto;
@@ -1032,31 +1387,44 @@ header {
   .section-07 {
     padding: 0;
     position: relative;
+    height: 100svh;
     img {
+      position: fixed;
+      top: 0;
+      left: 0;
       max-width: 100%;
       height: auto;
+      z-index: -2;
+      @media screen and (max-width: 991px) {
+        object-fit: cover;
+        height: 100%;
+      }
     }
     .ttl_wrap {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
+      z-index: -1;
       @include mt(2000, 160);
       overflow: hidden;
+      @media screen and (max-width: 991px) {
+        @include mt(991, 10);
+      }
       h2,
       .lead {
         text-align: center;
       }
       h2 {
         transform: translateY(-110%);
-        transition: 0.9s 0.2s cubic-bezier(0.3, 0.4, 0.1, 1);
+        transition: 0.9s 0s cubic-bezier(0.3, 0.4, 0.1, 1);
         &.is-action {
           transform: translateY(0);
         }
       }
       .lead {
         transform: translateY(110%);
-        transition: 0.9s 0.4s cubic-bezier(0.3, 0.4, 0.1, 1);
+        transition: 0.9s 0s cubic-bezier(0.3, 0.4, 0.1, 1);
         &.is-action {
           transform: translateY(0);
         }
@@ -1067,6 +1435,10 @@ header {
     background-color: $blue;
     background-image: url("../img/bg_sectino6.png");
     background-size: contain;
+    @media screen and (max-width: 991px) {
+      @include pl(991, 30);
+      @include pr(991, 30);
+    }
     .btn_area {
       width: 350px;
       height: 100px;
@@ -1113,6 +1485,10 @@ header {
       padding-top: 40px;
       padding-bottom: 40px;
       position: relative;
+      @media screen and (max-width: 991px) {
+        margin: 0;
+        width: 100%;
+      }
       .icon {
         position: absolute;
         img {
@@ -1134,6 +1510,11 @@ header {
         display: flex;
         padding-top: 60px;
         padding-bottom: 60px;
+        @media screen and (max-width: 440px) {
+        @include pt(440,60);
+        @include pb(440,60);
+        flex-direction: column;
+        }
         &:not(:last-child) {
           border-bottom: 1px solid #707070;
         }
@@ -1141,6 +1522,14 @@ header {
           width: 180px;
           font-size: 16px;
           font-weight: bold;
+          @media screen and (max-width: 768px) {
+            @include w_size(440, 65);
+          }
+          @media screen and (max-width: 440px) {
+          width: 100%;
+          @include fontsizeVw(440,28);
+          @include pb(440,15);
+          }
         }
         dd {
           width: 100%;
@@ -1149,12 +1538,18 @@ header {
             font-size: 16px;
             font-weight: bold;
             font-family: "noto-sans-cjk-jp", sans-serif;
+            @media screen and (max-width: 440px) {
+            @include fontsizeVw(440,20);
+            }
           }
           .text {
             line-height: 1.4;
             font-size: 16px;
             font-weight: 500;
             font-family: "noto-sans-cjk-jp", sans-serif;
+            @media screen and (max-width: 440px) {
+              @include fontsizeVw(440,18);
+              }
           }
         }
       }
@@ -1166,6 +1561,7 @@ header {
   header {
     .inner {
       opacity: 1;
+      background-color: $blue;
     }
   }
   #main_logo {
@@ -1201,7 +1597,9 @@ header {
     }
   }
 }
-
+footer {
+  background-color: #fff;
+}
 .section-01,
 .section-02,
 .section-03,
@@ -1210,6 +1608,7 @@ header {
 .section-06,
 .section-07 {
   position: relative;
+  background-color: #fff;
 }
 #section-01,
 #section-02,
@@ -1221,7 +1620,9 @@ header {
   position: absolute;
   top: 0;
 }
-
+.section-07 {
+  background-color: transparent;
+}
 .rotateY {
   transform: rotateY(180deg);
   transform-style: preserve-3d;
