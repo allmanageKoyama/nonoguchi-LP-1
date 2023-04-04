@@ -53,7 +53,7 @@ gulp.task("js", js);
 // BrowserSync
 function browserSync(done) {
 	browsersync.init({
-		proxy: "http://localhost/nonoguchi/"
+		proxy: "http://localhost/demo/nonoguchi-LP/"
 	});
 	done();
 }
