@@ -109,6 +109,11 @@ header {
   .mv {
     background: $blue;
     height: calc(100svh - 80px);
+    position: relative;
+    @media screen and (max-width: 440px) {
+      height: 100%;
+      height: calc(100vh - 80px);
+    }
     img {
       max-width: 100%;
       height: auto;
@@ -228,6 +233,7 @@ header {
           }
         }
       }
+     
       .copy_text {
         position: absolute;
         top: 45svh;
@@ -239,6 +245,9 @@ header {
         }
         @media screen and (max-width: 768px) {
           @include top(440, 250);
+        }
+        @media screen and (max-width: 440px) {
+          @include top(440, 320);
         }
         span {
           opacity: 0;
@@ -305,6 +314,57 @@ header {
         }
       }
     }
+    .scrolldown {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 10px;
+      height: 50px;
+      opacity: 0;
+      transition: .8s;
+      transition-delay: 3.9s;
+      &.is-action{
+        opacity: 1;
+      }
+      span {
+        position: absolute;
+        transform: translateX(-50%);
+        top: -50px;
+        color: $white;
+        font-size: 36px;
+        letter-spacing: 0.05em;
+        font-family: Impact;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 36px;
+
+          left: 50%;
+          width: 2px;
+          height: 30px;
+          background: $white;
+          animation: pathmove 1.4s ease-in-out infinite;
+          opacity: 0;
+          transform: translateX(-50%);
+        }
+      }
+      @keyframes pathmove{
+        0%{
+          height:0;
+          top: 45px;
+          opacity: 0;
+        }
+        30%{
+          height:30px;
+          opacity: 1;
+        }
+        100%{
+          height:0;
+          top:95px;
+          opacity: 0;
+        }
+      }
+    }
   }
   .ttl_wrap {
     margin-bottom: 50px;
@@ -346,12 +406,15 @@ header {
       @include fontsizeVw(440, 24);
       line-height: 1.6;
     }
+    @media screen and (max-width: 440px) {
+      @include fontsizeVw(440, 18);
+    }
     strong {
       font-size: 36px;
       font-weight: bold;
       line-height: 1.8;
       @media screen and (max-width: 768px) {
-        @include fontsizeVw(440, 32);
+        @include fontsizeVw(440, 20);
         text-align: justify;
         line-height: 1.6;
       }
@@ -932,7 +995,7 @@ header {
           transform: translateY(0);
         }
         @media screen and (max-width: 768px) {
-        @include fontsizeVw(440,60);
+          @include fontsizeVw(440, 60);
         }
       }
       .lead {
@@ -1707,9 +1770,9 @@ header {
     }
 
     @media only screen and (max-width: 767px) {
-      .cform tr{
-        &:first-child{
-          th{
+      .cform tr {
+        &:first-child {
+          th {
             border-top: 1px solid #999;
           }
         }

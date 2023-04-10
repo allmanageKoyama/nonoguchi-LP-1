@@ -142,10 +142,11 @@
                   <span><img src="src/img/text-02.svg" alt="なりたい人になろう"></span>
                   <span><img src="src/img/text-03.svg" alt="自分の強みを生かそう"></span>
                 </div>
-
+                
               </div>
+              <div class="scrolldown is-set"><span>Scroll</span></div>
             </div>
-
+           
 
             <article>
               <section class="section-01">
