@@ -2,7 +2,7 @@
 
 <html lang="ja">
 
-<head>
+<head prefix="og: https://ogp.me/ns#">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=1" />
   <meta name="format-detection" content="telephone=no">
@@ -23,7 +23,7 @@
   <meta property="og:description" content="「採用情報」ページです。野々口株式会社は、御客様のニーズ、時代の流れに対応出来るよう、体制を調えております。どのポジション（生地・製品）でも最適な提案を致します。">
   <meta property="og:url" content="https://www.nonoguchi.net/recruit/">
   <meta property="og:site_name" content="野々口株式会社 - 白衣・作業着・スポーツウェア・カジュアル・帽子・資材等">
-  <meta property="og:image" content="https://www.nonoguchi.net/Image/common/ogp.jpg">
+  <meta property="og:image" content="https://web-checker3.net/nonoguchi-recruit/demo/src/img/ogp.png">
 
   <script>
     (function(d) {
@@ -60,7 +60,7 @@
   <link href="https://www.nonoguchi.net//CSS/common.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page_sp.css" rel="stylesheet" type="text/css">
-  <link href="src/css/recruit.css" rel="stylesheet" type="text/css">
+  <link href="src/css/recruit.css?css=11" rel="stylesheet" type="text/css">
 
   <link rel='dns-prefetch' href='//s.w.org' />
   <link rel='stylesheet' id='wp-pagenavi-css' href='https://www.nonoguchi.net/wp-content/plugins/wp-pagenavi/pagenavi-css.css' type='text/css' media='all' />
@@ -99,11 +99,21 @@
           <li class="nav-item"><a href="#section-01">
               <p class="en">MESSAGE</p><span>メッセージ</span>
             </a></li>
-          <li class="nav-item"><a href="#section-02"><p class="en">IDEAL CANDIDATE</p><span>求める人物像</span></a></li>
-          <li class="nav-item"><a href="#section-03"><p class="en">MEMBER</p><span>野々口の人々</span></a></li>
-          <li class="nav-item"><a href="#section-04"><p class="en">WORK LIFE BALANCE</p><span>ワークライフ</span></a></li>
-          <li class="nav-item"><a href="#section-05"><p class="en">COMPANY SCENERY</p><span>社内風景</span></a></li>
-          <li class="nav-item"><a href="#section-06"><p class="en">REQUIREMENTS</p><span>募集要項</span></a></li>
+          <li class="nav-item"><a href="#section-02">
+              <p class="en">IDEAL CANDIDATE</p><span>求める人物像</span>
+            </a></li>
+          <li class="nav-item"><a href="#section-03">
+              <p class="en">MEMBER</p><span>野々口の人々</span>
+            </a></li>
+          <li class="nav-item"><a href="#section-04">
+              <p class="en">WORK LIFE BALANCE</p><span>ワークライフ</span>
+            </a></li>
+          <li class="nav-item"><a href="#section-05">
+              <p class="en">COMPANY SCENERY</p><span>社内風景</span>
+            </a></li>
+          <li class="nav-item"><a href="#section-06">
+              <p class="en">REQUIREMENTS</p><span>募集要項</span>
+            </a></li>
 
           <ul class="sub_menu">
             <li class="nav-item"><a href="#entry"><span>ENTRY</span></a></li>
@@ -211,14 +221,111 @@
                   <div class="contetnts is-set">
                     <?php
                     $persons = [
-                      ['01', '営業', '0001', 'Q入社から今に至る経緯と入社後について', 'インターネット求人で見つけ、面接に来てみると、和やかな面接で自分に合っていると思い入社を決意しました。<br>
-                      入社後は、円滑に業務を進めていく上で不可欠なDX化に向けて新しいアイディアなどを提案し、実際に取り入れていただきました。少数精鋭かつ発展途上の会社であり、業務改善に積極的で社員の意見をしっかり聞いていただける、今まで社内で誰もやった事がないようなことでも失敗を恐れずにチャレンジできる環境だと思います。'],
-                      ['02', '営業', '0002', 'Q入社から今に至る経緯と入社後について', 'インターネット求人で見つけ、面接に来てみると、和やかな面接で自分に合っていると思い入社を決意しました。<br>
-                      入社後は、円滑に業務を進めていく上で不可欠なDX化に向けて新しいアイディアなどを提案し、実際に取り入れていただきました。少数精鋭かつ発展途上の会社であり、業務改善に積極的で社員の意見をしっかり聞いていただける、今まで社内で誰もやった事がないようなことでも失敗を恐れずにチャレンジできる環境だと思います。'],
-                      ['03', '営業', '0003', 'Q入社から今に至る経緯と入社後について', 'インターネット求人で見つけ、面接に来てみると、和やかな面接で自分に合っていると思い入社を決意しました。<br>
-                      入社後は、円滑に業務を進めていく上で不可欠なDX化に向けて新しいアイディアなどを提案し、実際に取り入れていただきました。少数精鋭かつ発展途上の会社であり、業務改善に積極的で社員の意見をしっかり聞いていただける、今まで社内で誰もやった事がないようなことでも失敗を恐れずにチャレンジできる環境だと思います。'],
-                      ['04', '営業', '0004', 'Q入社から今に至る経緯と入社後について', 'インターネット求人で見つけ、面接に来てみると、和やかな面接で自分に合っていると思い入社を決意しました。<br>
-                      入社後は、円滑に業務を進めていく上で不可欠なDX化に向けて新しいアイディアなどを提案し、実際に取り入れていただきました。少数精鋭かつ発展途上の会社であり、業務改善に積極的で社員の意見をしっかり聞いていただける、今まで社内で誰もやった事がないようなことでも失敗を恐れずにチャレンジできる環境だと思います。'],
+                      [
+                        '01', '営業部', '0001',
+                        [
+                          [
+                            'Q入社から今に至る経緯と入社後について',
+                            '転職サイトで求人を見つけました。<br>
+                            求職中、営業アシスタントは候補考えていなかったのですが、面接官同士の雰囲気がすごく良く、
+                            貿易関係に興味があったので自分のスキルを活かせる環境だと興味を持ち応募に至りました。<br>
+                            現在は営業アシスタント兼貿易担当をしております。'
+                          ],
+                          [
+                            'Q所属している部署と仕事内容',
+                            '所属しているのは営業部になります。<br>
+                            顧客対応から受注発注など一般事務的なことから
+                            貿易の輸出輸入スケジュール管理、貿易書類作成、出荷輸送通関等の手配など、事務の中でも幅広い仕事があるためルーティンワークになりにくいところが仕事のおもしろさの1つだと感じています。<br>部署内はとても和気あいあいとしていて、誰かのお誕生日などにはご飯にも行ったりします。一人ひとりの個性を受け入れてくれてすごくフランクで風通しが良いと思います。'
+                          ],
+                          [
+                            'Q休日の過ごし方',
+                            '休日に時間のかかる美容関係に行くのがもったいなく感じてしまうため、定時後はネイル美容室エステなどなど！
+                            休日には少し遠くにドライブしたり、友達と果物狩りに行ったりと結構色んな所へ出かけていることも多いのですが、家にいるときはゲーム三昧！ゲームを始めると何時間もパソコンの前から動けなくなります((笑))今の会社に入ってからは休みが増えたため自分に使える時間も以前の会社よりかなり増えました。'
+                          ],
+                        ]
+                      ],
+                      [
+                        '02', '営業部', '0002',
+                        [
+                          [
+                            'Q入社から今に至る経緯と入社後について',
+                            '前職では広告代理店で働いており、服飾の専門学校出身ということもあり繊維関係の求人を探しておりました。<br>数多ある求人の中で野々口（株）は、当時社員数14名と少なく、一人に対するタスクも多いと思い、その中で会社に必要とされる人材になりたいと入社を決意しました。<br>先輩・上司に恵まれ気兼ねなく相談ができ、また自分で考えて仕事ができる環境それを評価してくれる事が入社してとても良かったと思います。'
+                          ],
+                          [
+                            'Q所属している部署と仕事内容',
+                            '営業部に所属しています。<br>
+                            お客様からの生地の発注を承り、加工・出荷手配をします。<br>
+                            打ち合わせ・商談から事務的な作業まで幅広く行っております。<br>
+                            お問い合わせで「こんな生地ある？」とご依頼を頂く事もありますが
+                            生地に関して分からない場合、先輩に教わりながら対応しています。<br>
+                            業界未経験ですが日々学ぶことがあり成長を感じながら働いております。<br>
+                            お客様とコミュニケーションをとり、信頼関係を築け、期待に応えれた時やりがいを感じています。<br>
+                            また、何もわからない自分に入社当初から様々な仕事を振って頂き、
+                            前職時より責任感が強くなり、会社から求められる事も大きなやりがいに繋がっております。
+                            '
+                          ],
+                          [
+                            'Q仕事終わり・休日の過ごし方',
+                            '仕事が残っていればもちろん残業しますが基本定時で帰ります。<br>
+                            退社後は友人と飲みに行ったり、たまに社内で飲みに行くこともあります。<br>
+                            休日は趣味のゴルフや野球で体を動かしています。<br>
+                            有給もとれやすく長期休みは旅行に行く事もあります。'
+                          ],
+                        ]
+                      ],
+                      [
+                        '03', '総務部', '0003',
+                        [
+                          [
+                            'Q入社から今に至る経緯と入社後について',
+                            'インターネット求人で見つけ、面接に来てみると、和やかな面接で自分に合っていると思い入社を決意しました。<br>
+                            入社後は、円滑に業務を進めていく上で不可欠なDX化に向けて新しいアイディアなどを提案し、実際に取り入れていただきました。<br>少数精鋭かつ発展途上の会社であり、業務改善に積極的で社員の意見をしっかり聞いていただける、今まで社内で誰もやった事がないようなことでも失敗を恐れずにチャレンジできる環境だと思います。'
+                          ],
+                          [
+                            'Q所属している部署と仕事内容',
+                            '総務部に所属しております。<br>
+                            その中でも、主に経理システム関連を担当しており、入出金確認等の日次処理、月次処理、スポット処理などを行います。<br>
+                            また社員が困っていることなどあればサポートするなど、一見地味な部署に見えるかも知れませんが、会社を側面から支えている必要不可欠な部署だと私自身は感じております。<br>
+                            総務部は基本静かですが、時には笑い有りの高低差満点の部署だと思います。<br>
+                            経理財務は数字を管理しているため、正しいものを示さないといけません。相違があれば数字の粗を探す必要があるため、苦労することもかなりありますが、年次処理で出来上げる『決算書』という１つの作品を完遂した時は、部署の皆さんで大きな達成感を味わう事ができる魅力的な仕事だと思っております。'
+                          ],
+                          [
+                            'Q休日の過ごし方',
+                            '基本残業がないため、定時後は子供の面倒をみたりしております。<br>
+                            そのおかげで妻の機嫌も良くなり、仮面夫婦から円満夫婦になりました（笑）<br>
+                            休日は高校野球観戦とJリーグ観戦を楽しんでおります。<br>
+                            それ以外は子供とショッピングモールへ出かけたり公園へ行ったりと
+                            家族と過ごせる時間も多くプライベートも充実しており、
+                            まさに仕事と家庭の『二刀流』に取り組める会社だと思います。'
+                          ],
+                        ]
+                      ],
+                      [
+                        '04', '生産管理部', '0004',
+                        [
+                          [
+                            'Q入社から今に至る経緯と入社後について',
+                            '元々、同じ業界で働いていたという事もあり、この会社の事は多少なりとも知っておりました。実際に取引相手として、会社を訪れた際に、社内の方々と実際にやりとりをしている中で、とても働きやすそうな職場だという印象を受けました。<br>
+                            実際に入社後も、自分自身が思っていた以上に社内雰囲気が良く、皆優しく迎え入れてくれた事を覚えています。随分年月は経過してしまいますが（笑）<br>
+                            そして何より責任のある仕事をさせてもらっていて、日々充実しております。'
+                          ],
+                          [
+                            'Q所属している部署と仕事内容',
+                            '生産管理部に所属しております。<br>
+                            日々の業務としては、仕入業務や在庫管理等があり、多岐にわたります。<br>
+                            取引先さんにしっかりと納期を守ってもらえるよう、遅れそうな場合の事前フォローも重要です。仕事全体の視点から見ると、覚えることや段取りが大変な仕事ですが、現場を計画通りに動かすことこそ生産管理の醍醐味と自負しております。<br>
+                            もちろん、仕事中は皆さん真面目に取り組んでおりますが、時には世間話もあり、オンとオフをしっかりと弁える部署だと思います。'
+                          ],
+                          [
+                            'Q休日の過ごし方',
+                            '残業は多少ありますが、自宅に帰ってからは自分のリフレッシュできる時間を
+                            過ごせております。<br>
+                            休みの日は、家でのんびりする事が多いですが、時には外出して、広い大地の中を
+                            勇敢に走る馬の姿を見に行ったり、また実家に帰った時には愛犬と遊んだりしております。<br>
+                            自分の時間はしっかりと確保できる会社だと思います。'
+                          ],
+                        ]
+                      ],
                     ]
                     ?>
                     <?php foreach ($persons as $value) : ?>
@@ -236,18 +343,22 @@
                     <?php endforeach; ?>
                     <?php foreach ($persons as $content) : ?>
                       <div class="message-box" id="person-<?php echo $content[0]; ?>">
-                        <div class="img-box">
-                          <img src="src/img/person-<?php echo $content[0]; ?>_detail.png" alt="">
-                        </div>
-                        <div class="contents-box">
+                        <?php $i = 1;
+                        foreach ($content[3] as $value) : ?>
                           <div class="inner">
-                            <h4><span class="position"><?php echo $content[1]; ?></span><span class="join"><?php echo $content[2]; ?>年入社</span></h4>
-                            <h5><?php echo $content[3]; ?></h5>
-                            <p class="text"><?php echo $content[4]; ?></p>
-                            <div class="btn_area close">
-                              <div class="btn">閉じる</div>
+                            <div class="img-box">
+                              <img src="src/img/person-<?php echo $content[0]; ?>_detail_<?php echo $i; ?>.jpg" alt="">
+                            </div>
+                            <div class="contents-box">
+                              <h5><?php echo $value[0]; ?></h5>
+                              <p class="text"><?php echo $value[1]; ?></p>
+
                             </div>
                           </div>
+                        <?php $i++;
+                        endforeach; ?>
+                        <div class="btn_area close">
+                          <div class="btn">閉じる</div>
                         </div>
                       </div>
                     <?php endforeach; ?>
@@ -359,7 +470,10 @@
               <h2 class="ttl_01 is-set">COMPANY SCENERY</h2>
               <p class="lead is-set">社内風景</p>
             </div>
-            <img class="icon" src="src/img/bg_section7.jpg" alt="">
+            <picture>
+              <source srcset="src/img/bg_section7_sp.jpg" media="(max-width: 768px)" type="image/png">
+              <img src="src/img/bg_section7.jpg" alt=社内風景>
+            </picture>
           </section>
 
           <section class="section-08">
@@ -564,10 +678,15 @@
           if (isInView) {
             $(this).addClass("is-action");
           } else {
-            $(this).removeClass("is-action");
-            $(this).removeClass("is-detail");
+            // $(this).removeClass("is-action");
+            // $(this).removeClass("is-detail");
+            // $('.message-box').removeClass('set')
+            // $('.set').removeAttr('style')
+            // $('.pnl').removeAttr('style')
+
           }
         });
+
         $(".move").on("inview", function(event, isInView) {
           if (isInView) {
             $(this).addClass("on");
