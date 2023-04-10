@@ -152,7 +152,7 @@
                 <span id="section-01"></span>
                 <div class="ttl_wrap">
                   <h2 class="ttl_01 is-set">MESSAGE</h2>
-                  <p class="lead is-set">メッセージ</p>
+                  <p class="lead is-set">採用担当者からの一言</p>
                 </div>
                 <div class="container">
 
@@ -222,7 +222,7 @@
                     <?php
                     $persons = [
                       [
-                        '01', '営業部', '0001',
+                        '01', '営業部', '2022',
                         [
                           [
                             'Q入社から今に至る経緯と入社後について',
@@ -245,7 +245,7 @@
                         ]
                       ],
                       [
-                        '02', '営業部', '0002',
+                        '02', '営業部', '2020',
                         [
                           [
                             'Q入社から今に至る経緯と入社後について',
@@ -274,7 +274,7 @@
                         ]
                       ],
                       [
-                        '03', '総務部', '0003',
+                        '03', '総務部', '2021',
                         [
                           [
                             'Q入社から今に至る経緯と入社後について',
@@ -301,7 +301,7 @@
                         ]
                       ],
                       [
-                        '04', '生産管理部', '0004',
+                        '04', '生産管理部', '2001',
                         [
                           [
                             'Q入社から今に至る経緯と入社後について',
@@ -369,8 +369,8 @@
               <section class="section-04">
                 <span id="section-04"></span>
                 <div class="ttl_wrap">
-                  <h2 class="ttl_01 is-set">WORK LIFE BALANCE</h2>
-                  <p class="lead is-set">ワークライフバランス</p>
+                  <h2 class="ttl_01 is-set">ENVIRONMENT</h2>
+                  <p class="lead is-set">どんな会社？</p>
                 </div>
                 <div class="container">
 
@@ -395,7 +395,6 @@
                       <dd><span>平均年齢</span><span class="move"><span>38.9</span></span><span>歳</span><img src="src/img/icon-11.svg" alt=""></dd>
                       <dd><span class="move"><span>第２新卒</span></span><span>採用実績あり</span><img src="src/img/icon-12.svg" alt=""></dd>
                     </dl>
-                    <img class="icon" src="src/img/icon-13.png" alt="">
                   </div>
                 </div>
               </section>
@@ -509,13 +508,11 @@
               <dl>
                 <dt>求める人材</dt>
                 <dd>
-                  <p class="text">未経験者歓迎・第二新卒歓迎<br>
+                  <p class="text">第二新卒歓迎<br>
                     ◆要普通自動車免許<br>
-                    ※人物重視の採用です。<br>
                     異業種からの転職者も多数活躍中！</p>
                   <h4>【必須条件】</h4>
-                  <p class="text">◆30歳以下の方（若年層の長期キャリア形成を図るため）<br>
-                    未経験者歓迎！まずはあなたの意欲を重視！</p>
+                  <p class="text">未経験者歓迎！まずはあなたの意欲を重視！</p>
                   <p class="text">
                     ★こんな方にピッタリ<br>
                     主体的に動きたい!という方<br>
@@ -529,13 +526,23 @@
               <dl>
                 <dt>勤務地</dt>
                 <dd>
-                  <p class="text">本社/大阪府大阪市中央区北久宝寺町1－2－15<br>※転勤なし</p>
-                  <p class="text">東京営業所/東京都中央区日本橋小伝馬町16－9豊鈴ビル503<br>※転勤なし</p>
+                  <h3>本社/大阪府大阪市中央区北久宝寺町1－2－15 ※転勤なし</h3>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.4861369739003!2d135.50840725414193!3d34.68064922800789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e7233dee341d%3A0x806aa6ccdba95a7f!2z6YeO44CF5Y-j77yI5qCq77yJ!5e0!3m2!1sja!2sjp!4v1681104258303!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   <h4>【アクセス(大阪)】</h4>
                   <p class="text">
                     地下鉄堺筋線「堺筋本町駅」より徒歩5分<br>
                     地下鉄谷町線「谷町四丁目駅より」徒歩10分<br>
                     地下鉄長堀鶴見緑地線「松屋町駅」より徒歩9分</p>
+                  <h3>ガレージ/大阪市中央区北久宝寺町1丁目4番10号　大成合同ビル603号 ※転勤なし</h3>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.5031037727126!2d135.50791465821538!3d34.67979280081158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e72323dc481f%3A0x18373a5cb492cd96!2z44CSNTQxLTAwNTcg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy65YyX5LmF5a6d5a-655S677yR5LiB55uu77yU4oiS77yR77yQIOWkp-aIkOWQiOWQjOODk-ODqw!5e0!3m2!1sja!2sjp!4v1681104594248!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <h4>【アクセス(ガレージ)】</h4>
+                  <p class="text">
+                    地下鉄堺筋線「堺筋本町駅」より徒歩3分<br>
+                    地下鉄谷町線「長堀橋より」徒歩10分<br>
+                    地下鉄長堀鶴見緑地線「松屋町駅」より徒歩10分</p>
+                  <h3>東京営業所/東京都中央区日本橋小伝馬町16－9豊鈴ビル503 ※転勤なし</h3>
+
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.378554724429!2d139.7805199546097!3d35.69230098511237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188eacdcf51d73%3A0x4f5ce0994b72defb!2z44CSMTAzLTAwMDEg5p2x5Lqs6YO95Lit5aSu5Yy65pel5pys5qmL5bCP5Lyd6aas55S677yR77yW4oiS77yZIOixiumItOODk-ODqw!5e0!3m2!1sja!2sjp!4v1681104916776!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   <h4>【アクセス(東京)】</h4>
                   <p class="text">
                     地下鉄日比谷線「小伝馬町駅」より徒歩3分<br>
@@ -549,9 +556,6 @@
                 <dd>
                   <p class="text">月給20万～28万円＋諸手当<br>
                     ※年齢・能力などを考慮し、決定します。</p>
-                  <p class="text">モデル年収例<br>
-                    年収320万円/27歳営業職経験3年<br>
-                    年収420万円/35歳営業職経験7年</p>
                 </dd>
               </dl>
               <dl>
@@ -564,12 +568,12 @@
                 <dt>諸手当</dt>
                 <dd>
                   <p class="text">交通費(全額)<br>
-                    食事手当て(7000円/月)<br>
+                    食事手当て(7,000円/月)<br>
                     出張手当<br>
                     住宅手当(2万円/月　本人名義で住宅費を御支払の方)<br>
-                    家族手当(配偶者 : 5000円/月、子：一人につき月3000円/月)<br>
+                    家族手当(配偶者 : 5,000円/月、子：一人につき月3,000円/月)<br>
                     役職手当(各役職による)<br>
-                    皆勤手当（1500円／月）
+                    皆勤手当（1,500円／月）
                   </p>
                 </dd>
               </dl>
@@ -618,7 +622,6 @@
                 <dt>選考の特徴</dt>
                 <dd>
                   <p class="text">夜間面接OK<br>
-                    土日面接OK<br>
                     面接日程応相談<br>
                     入社時期相談<br>
                     応募から内定まで1カ月</p>
@@ -626,8 +629,52 @@
               </dl>
 
             </div>
-            <div class="btn_area">
-              <a href="entry" class="btn">ENTRY</a>
+          </section>
+          <section class="section-form">
+            <span id="entry"></span>
+            <div class="container">
+            <div class="ttl_wrap">
+              <h2 class="ttl_01 is-set">ENTRY</h2>
+              <p class="lead is-set">応募フォーム</p>
+            </div>
+              <table class="cform">
+                <tbody>
+                  <tr>
+                    <th>名前 <span class="required-srt">必須</span></th>
+                    <td class="demo">[mwform_text name="お名前" size="60" placeholder="名前"]</td>
+                    <td><input type="text" size="60" placeholder="名前"></td>
+                  </tr>
+
+
+                  <tr>
+                    <th>電話番号</th>
+                    <td class="demo"><label for="tel">
+                      </label>[mwform_text name="電話" size="60" placeholder="電話番号"]
+                    </td>
+                    <td><input type="text" placeholder="電話番号"></td>
+                  </tr>
+                  <tr>
+                    <th>メールアドレス <span class="required-srt">必須</span></th>
+                    <td class="demo">[mwform_email name="メールアドレス" size="60" placeholder="メールアドレス"]</td>
+                    <td><input type="email" name="メールアドレス" id="" placeholder="メールアドレス"></td>
+                  </tr>
+
+                  <tr>
+                    <th>履歴書</th>
+                    <td class="demo">[mwform_file name="ファイル"]</td>
+                    <td><input type="file" name="メールアドレス" id=""></td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <div class="form-btn_area">
+                <div class="submit-btn demo">[mwform_submitButton name="確認送信" confirm_value="確認画面へ進む" submit_value="送信する"]</div>
+                <form action="entry-confirm.php">
+                <div class="submit-btn"><input type="submit" value="確認画面へ進む"></div>
+                </form>
+                <p class="back-btn demo" style="text-align: center;">[mwform_backButton value="戻る"]</p>
+                <p class="back-btn" style="text-align: center;"><input type="button" value="戻る"></p>
+              </div>
             </div>
           </section>
         </div>
