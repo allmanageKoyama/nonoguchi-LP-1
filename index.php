@@ -641,27 +641,27 @@
               <table class="cform">
                 <tbody>
                   <tr>
-                    <th>名前 <span class="required-srt">必須</span></th>
+                    <th>名前 <span class="required-srt">[必須]</span></th>
                     <td class="demo">[mwform_text name="お名前" size="60" placeholder="名前"]</td>
                     <td><input type="text" size="60" placeholder="名前"></td>
                   </tr>
 
 
                   <tr>
-                    <th>電話番号</th>
+                    <th>電話番号 <span class="required-dec">[任意]</span></th>
                     <td class="demo"><label for="tel">
                       </label>[mwform_text name="電話" size="60" placeholder="電話番号"]
                     </td>
                     <td><input type="text" placeholder="電話番号"></td>
                   </tr>
                   <tr>
-                    <th>メールアドレス <span class="required-srt">必須</span></th>
+                    <th>メールアドレス <span class="required-srt">[必須]</span></th>
                     <td class="demo">[mwform_email name="メールアドレス" size="60" placeholder="メールアドレス"]</td>
                     <td><input type="email" name="メールアドレス" id="" placeholder="メールアドレス"></td>
                   </tr>
 
                   <tr>
-                    <th>履歴書</th>
+                    <th>履歴書 <span class="required-dec">[任意]</span></th>
                     <td class="demo">[mwform_file name="ファイル"]</td>
                     <td><input type="file" name="メールアドレス" id=""></td>
                   </tr>
@@ -673,8 +673,6 @@
                 <form action="entry-confirm.php">
                 <div class="submit-btn"><input type="submit" value="確認画面へ進む"></div>
                 </form>
-                <p class="back-btn demo" style="text-align: center;">[mwform_backButton value="戻る"]</p>
-                <p class="back-btn" style="text-align: center;"><input type="button" value="戻る"></p>
               </div>
             </div>
           </section>
