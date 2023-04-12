@@ -60,7 +60,7 @@
   <link href="https://www.nonoguchi.net//CSS/common.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page_sp.css" rel="stylesheet" type="text/css">
-  <link href="src/css/recruit.css?css=11" rel="stylesheet" type="text/css">
+  <link href="src/css/recruit.css?css=<?php echo rand() ;?>" rel="stylesheet" type="text/css">
 
   <link rel='dns-prefetch' href='//s.w.org' />
   <link rel='stylesheet' id='wp-pagenavi-css' href='https://www.nonoguchi.net/wp-content/plugins/wp-pagenavi/pagenavi-css.css' type='text/css' media='all' />
@@ -148,7 +148,7 @@
                 </div>
                 
               </div>
-              <div class="scrolldown is-set"><span>Scroll</span></div>
+              <div class="scrolldown is-action"><span>Scroll</span></div>
             </div>
            
 
