@@ -82,9 +82,10 @@
                 <li class="nav-item"><a href="#section-01"><span>メッセージ</span></a></li>
                 <li class="nav-item"><a href="#section-02"><span>求める人物像</span></a></li>
                 <li class="nav-item"><a href="#section-03"><span>野々口の人々</span></a></li>
-                <li class="nav-item"><a href="#section-04"><span>ワークライフ</span></a></li>
-                <li class="nav-item"><a href="#section-05"><span>社内風景</span></a></li>
-                <li class="nav-item"><a href="#section-06"><span>募集要項</span></a></li>
+                <li class="nav-item"><a href="#section-04"><span>どんな会社？</span></a></li>
+                <li class="nav-item"><a href="#section-05"><span>諸手当</span></a></li>
+                <li class="nav-item"><a href="#section-07"><span>社内風景</span></a></li>
+                <li class="nav-item"><a href="#section-08"><span>募集要項</span></a></li>
                 <li class="nav-item"><a href="#entry"><span>ENTRY</span></a></li>
               </ul>
             </nav>
@@ -106,12 +107,15 @@
               <p class="en">MEMBER</p><span>野々口の人々</span>
             </a></li>
           <li class="nav-item"><a href="#section-04">
-              <p class="en">WORK LIFE BALANCE</p><span>ワークライフ</span>
+              <p class="en">ENVIRONMENT</p><span>どんな会社？</span>
             </a></li>
           <li class="nav-item"><a href="#section-05">
+              <p class="en">ALLOWANCES</p><span>諸手当</span>
+            </a></li>
+          <li class="nav-item"><a href="#section-07">
               <p class="en">COMPANY SCENERY</p><span>社内風景</span>
             </a></li>
-          <li class="nav-item"><a href="#section-06">
+          <li class="nav-item"><a href="#section-08">
               <p class="en">REQUIREMENTS</p><span>募集要項</span>
             </a></li>
 
@@ -477,6 +481,7 @@
           </section>
 
           <section class="section-08">
+          <span id="section-08"></span>
             <div class="ttl_wrap">
               <h2 class="ttl_01 is-set">REQUIREMENTS</h2>
               <p class="lead is-set">募集要項</p>
