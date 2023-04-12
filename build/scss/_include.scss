@@ -13,6 +13,10 @@ header {
     opacity: 0;
     transition: 1.5s;
     transition-delay: 1.5s;
+    @media screen and (max-width: 1400px) {
+      @include pl(1400,40);
+    
+    }
     @media screen and (max-width: 991px) {
       background-color: $blue;
       opacity: 1;
@@ -36,11 +40,19 @@ header {
       li {
         width: fit-content;
         margin-left: 30px;
+        @media screen and (max-width: 1400px) {
+          @include ml(1400,30);
+        
+        }
         a {
           display: flex;
           height: 100%;
           font-size: 16px;
           color: $white;
+          @media screen and (max-width: 1400px) {
+            @include fontsizeVw(1400,16);
+          
+          }
           span {
             width: fit-content;
             display: flex;
@@ -51,6 +63,10 @@ header {
           width: 250px;
           height: 100%;
           background-color: $white;
+          @media screen and (max-width: 1400px) {
+            @include w_size(1400,250);
+          
+          }
           a {
             font-family: Impact;
             letter-spacing: 0.05em;
@@ -59,6 +75,10 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+            @media screen and (max-width: 1400px) {
+              @include fontsizeVw(1400,30);
+            
+            }
             span {
               color: $blue;
             }
@@ -106,10 +126,15 @@ header {
   .mv {
     background: $blue;
     height: calc(100svh - 80px);
+    min-height: 900px;
     position: relative;
+    @media screen and (max-width: 600px) {
+      min-height: 700px;
+    }
     @media screen and (max-width: 440px) {
       height: 100%;
       height: calc(100vh - 80px);
+      min-height: auto;
     }
     img {
       max-width: 100%;
@@ -252,13 +277,10 @@ header {
 
       .copy_text {
         position: absolute;
-        top: 53svh;
+        top: 100%;
         left: 0;
         width: 100%;
         z-index: 3;
-        @media screen and (max-width: 991px) {
-          top: 50svh;
-        }
         @media screen and (max-width: 768px) {
           @include top(768, 380);
         }
@@ -269,82 +291,52 @@ header {
           opacity: 0;
           transition: 0.6s;
           transition-delay: 3.5s;
-          @media screen and (max-width: 768px) {
-          width: 100%;
           display: block;
           text-align: center;
-          }
+          width: 100%;
+          
+          
           img {
             transition: 0.6s;
             transform: rotate(8deg) translateX(10svh);
             transition-timing-function: cubic-bezier(0, 0, 0.26, 2.07);
             transition-delay: 3.5s;
-            @media screen and (max-width: 991px) {
-              @include w_size(991, 500);
-            }
-            @media screen and (max-width: 768px) {
-            @include w_size(768,600);
-            }
           }
           &:nth-of-type(1) {
-            position: relative;
+            position: absolute;
             top: 0;
-            left: -10svh;
+            left: 0;
             transition-delay: 3.5s;
-            @media screen and (max-width: 991px) {
-              left: 1svh;
-            }
-            @media screen and (max-width: 768px) {
-            left: 50%;
-            transform: translateX(-50%);
-            }
-            img {
-              transition-delay: 3.5s;
-            }
+            text-align: left;
           }
           &:nth-of-type(2) {
-            position: relative;
-            top: -16svh;
-            left: 40svh;
+            position: absolute;
+            top: 0;
+            left: 0;
             transition-delay: 3.7s;
-            @media screen and (max-width: 991px) {
-              top: -14svh;
-              left: 30svh;
-            }
-            @media screen and (max-width: 768px) {
-              top: -6svh;
-              left: 0;
-            }
-            @media screen and (max-width: 600px) {
-              @include top(440, -50);
-            }
-            @media screen and (max-width: 440px) {
-              @include top(440, -20);
-            }
+            text-align: center;
+            transform: translateY(60%);
             img {
               transition-delay: 3.7s;
             }
             
           }
           &:nth-of-type(3) {
-            position: relative;
-            top: -12svh;
-            left: 10svh;
+            position: absolute;
+            top: 0;
+            left: 0;
             transition-delay: 3.9s;
-            @media screen and (max-width: 991px) {
-              top: -27svh;
-              left: 55svh;
-            }
+            text-align: right;
+            transform: translateY(110%);
+            
             @media screen and (max-width: 768px) {
-              top: -12svh;
-              left: 0;
-            }
+              transform: translateY(115%);
+             }
             @media screen and (max-width: 600px) {
-              @include top(440, -100);
-            }
-            @media screen and (max-width: 440px) {
-              @include top(440, -40);
-            }
+              transform: translateY(130%);
+             }
+           
+           
             img {
               transition-delay: 3.9s;
             }
@@ -2058,16 +2050,17 @@ footer {
   }
 }
 @media screen and (max-width: 440px) {
-  .main_menu {
+  ul.main_menu {
+    @include pt(440,70);
     li {
       @include mb(440, 30);
       a {
         p {
-          @include fontsizeVw(440, 18);
+          @include fontsizeVw(440, 14);
           @include mb(440, 10);
         }
         span {
-          @include fontsizeVw(440, 32);
+          @include fontsizeVw(440, 28);
         }
       }
     }
