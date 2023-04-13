@@ -1,3 +1,8 @@
+<?php
+/**
+Template Name: 応募フォーム入力確認
+***/
+?>
 <!doctype html>
 
 <html lang="ja">
@@ -17,7 +22,16 @@
   <link rel="mask-icon" href="https://www.nonoguchi.net/favicon/safari-pinned-tab.svg" color="#040474">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
+<!-- グーグルアナリティクス2022.12.27hamawaki -->
+<!-- Google tag (gtag.js) -->
+<script async src="/https://www.googletagmanager.com/gtag/js?id=G-QKKY24VF37"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-QKKY24VF37');
+</script>
   <meta property="og:title" content="採用情報 | 野々口株式会社">
   <meta property="og:type" content="website">
   <meta property="og:description" content="「採用情報」ページです。野々口株式会社は、御客様のニーズ、時代の流れに対応出来るよう、体制を調えております。どのポジション（生地・製品）でも最適な提案を致します。">
@@ -60,12 +74,13 @@
   <link href="https://www.nonoguchi.net//CSS/common.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page_sp.css" rel="stylesheet" type="text/css">
-  <link href="src/css/recruit.css?css=11" rel="stylesheet" type="text/css">
+  <link href="<?php echo home_url(); ?>/src/css/recruit.css?css=<?php echo rand() ;?>" rel="stylesheet" type="text/css">
 
   <link rel='dns-prefetch' href='//s.w.org' />
   <link rel='stylesheet' id='wp-pagenavi-css' href='https://www.nonoguchi.net/wp-content/plugins/wp-pagenavi/pagenavi-css.css' type='text/css' media='all' />
   <script src='https://www.nonoguchi.net/wp-includes/js/jquery/jquery.js'></script>
   <script src='https://www.nonoguchi.net/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+  <?php wp_head(); ?>
 </head>
 
 <body id="recruit" class="under">
@@ -74,18 +89,18 @@
       <header class="header">
         <div class="inner">
           <div class="logo_area">
-            <div class="hdr_logo"><a href="https://www.nonoguchi.net/"><img src="src/img/h_logo.svg" alt="野々口株式会社"></a></div>
+            <div class="hdr_logo"><a href="https://www.nonoguchi.net/"><img src="<?php echo home_url(); ?>/src/img/h_logo.svg" alt="野々口株式会社"></a></div>
           </div>
           <div class="r_area">
             <nav id="gNavi" class="visible_pc">
               <ul class="navi">
-                <li class="nav-item"><a href="#section-01"><span>メッセージ</span></a></li>
-                <li class="nav-item"><a href="#section-02"><span>求める人物像</span></a></li>
-                <li class="nav-item"><a href="#section-03"><span>野々口の人々</span></a></li>
-                <li class="nav-item"><a href="#section-04"><span>ワークライフ</span></a></li>
-                <li class="nav-item"><a href="#section-05"><span>社内風景</span></a></li>
-                <li class="nav-item"><a href="#section-06"><span>募集要項</span></a></li>
-                <li class="nav-item"><a href="#entry"><span>ENTRY</span></a></li>
+                <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#section-01"><span>メッセージ</span></a></li>
+                <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#section-02"><span>求める人物像</span></a></li>
+                <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#section-03"><span>野々口の人々</span></a></li>
+                <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#section-04"><span>ワークライフ</span></a></li>
+                <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#section-05"><span>社内風景</span></a></li>
+                <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#section-06"><span>募集要項</span></a></li>
+                <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#entry"><span>ENTRY</span></a></li>
               </ul>
             </nav>
           </div>
@@ -96,27 +111,27 @@
       </div>
       <nav class="drawer-nav">
         <ul class="drawer-menu main_menu">
-          <li class="nav-item"><a href="#section-01">
+          <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#section-01">
               <p class="en">MESSAGE</p><span>メッセージ</span>
             </a></li>
-          <li class="nav-item"><a href="#section-02">
+          <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#section-02">
               <p class="en">IDEAL CANDIDATE</p><span>求める人物像</span>
             </a></li>
-          <li class="nav-item"><a href="#section-03">
+          <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#section-03">
               <p class="en">MEMBER</p><span>野々口の人々</span>
             </a></li>
-          <li class="nav-item"><a href="#section-04">
+          <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#section-04">
               <p class="en">WORK LIFE BALANCE</p><span>ワークライフ</span>
             </a></li>
-          <li class="nav-item"><a href="#section-05">
+          <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#section-05">
               <p class="en">COMPANY SCENERY</p><span>社内風景</span>
             </a></li>
-          <li class="nav-item"><a href="#section-06">
+          <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#section-06">
               <p class="en">REQUIREMENTS</p><span>募集要項</span>
             </a></li>
 
           <ul class="sub_menu">
-            <li class="nav-item"><a href="#entry"><span>ENTRY</span></a></li>
+            <li class="nav-item"><a href="<?php echo home_url(); ?>/recruit/#entry"><span>ENTRY</span></a></li>
           </ul>
           </li>
         </ul>
@@ -124,55 +139,7 @@
       <div id="contents" class="cf">
         <div id="main-cts" class="cf">
        
-          <section class="section-form">
-            <span id="entry"></span>
-            <div class="container">
-            <div class="ttl_wrap">
-              <h2 class="ttl_01 is-set">ENTRY CONFIRM</h2>
-              <p class="lead is-set">応募内容の確認</p>
-            </div>
-            <p class="text">以下の内容で送信します</p>
-              <table class="cform">
-                <tbody>
-                  <tr>
-                    <th>名前 <span class="required-srt">必須</span></th>
-                    <td class="demo">[mwform_text name="お名前" size="60" placeholder="名前"]</td>
-                    <td>名前</td>
-                  </tr>
-
-
-                  <tr>
-                    <th>電話番号</th>
-                    <td class="demo"><label for="tel">
-                      </label>[mwform_text name="電話" size="60" placeholder="電話番号"]
-                    </td>
-                    <td>電話番号</td>
-                  </tr>
-                  <tr>
-                    <th>メールアドレス <span class="required-srt">必須</span></th>
-                    <td class="demo">[mwform_email name="メールアドレス" size="60" placeholder="メールアドレス"]</td>
-                    <td>メールアドレス</td>
-                  </tr>
-
-                  <tr>
-                    <th>履歴書</th>
-                    <td class="demo">[mwform_file name="ファイル"]</td>
-                    <td><input type="file" name="メールアドレス" id=""></td>
-                  </tr>
-
-                </tbody>
-              </table>
-              <form action="entry-thanks.php">
-              <div class="form-btn_area">
-                
-                <div class="submit-btn demo">[mwform_submitButton name="確認送信" confirm_value="確認画面へ進む" submit_value="送信する"]</div>
-                <div class="submit-btn"><input type="submit" value="送信する"></div>
-                <p class="back-btn demo" style="text-align: center;">[mwform_backButton value="戻る"]</p>
-                <p class="back-btn" style="text-align: center;"><input type="button" value="戻る"></p>
-              </div>
-              </form>
-            </div>
-          </section>
+        <?php echo do_shortcode('[mwform_formkey key="1845"]') ;?>
         </div>
       </div>
 
@@ -214,20 +181,11 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
 
       <script>
-        $(window).on("load", function() {
-          $('body').addClass('mv-loaded')
-        });
+       
         $(".is-set").on("inview", function(event, isInView) {
           if (isInView) {
             $(this).addClass("is-action");
-          } else {
-            // $(this).removeClass("is-action");
-            // $(this).removeClass("is-detail");
-            // $('.message-box').removeClass('set')
-            // $('.set').removeAttr('style')
-            // $('.pnl').removeAttr('style')
-
-          }
+          } 
         });
 
         $(".move").on("inview", function(event, isInView) {
@@ -237,36 +195,10 @@
             $(this).removeClass("on");
           }
         });
-        $('.section-03 .contetnts .pnl').on('click', function() {
-          if ($(this).hasClass('is-select')) {
-            $('.section-03 .contetnts').removeClass('is-detail')
-            $(this).removeClass('is-select')
-            $(this).removeAttr('style')
-            $('.message-box').removeClass('set')
-          } else {
-            $('.section-03 .contetnts').addClass('is-detail')
-            $(this).css('z-index', '100')
-            $(this).addClass('is-select')
-            var box = $(this).attr('data-pnl_no')
-            $('#person-' + box).addClass('set')
-          }
-        })
-        $('.message-box .btn').on('click', function() {
-          $('.section-03 .contetnts').removeClass('is-detail')
-          $('.message-box').removeClass('set')
-          $('.section-03 .contetnts .pnl').removeClass('is-select')
-          $('.section-03 .contetnts .pnl').removeAttr('style')
-        })
-        $(".section-06").on("inview", function(event, isInView) {
-          if (isInView) {
-            $('.section-07 .is-set').removeClass("is-action");
-          } else {
-            $('.section-07 .is-set').addClass("is-action");
-          }
-        });
       </script>
     </div>
   </div>
+  <?php wp_footer(); ?>
 </body>
 
 </html>

@@ -1,3 +1,8 @@
+<?php
+/**
+Template Name: 採用情報LPテーマ
+***/
+?>
 <!doctype html>
 
 <html lang="ja">
@@ -19,7 +24,7 @@
   <meta name="theme-color" content="#ffffff">
 <!-- グーグルアナリティクス2022.12.27hamawaki -->
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QKKY24VF37"></script>
+<script async src="/https://www.googletagmanager.com/gtag/js?id=G-QKKY24VF37"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -69,12 +74,13 @@
   <link href="https://www.nonoguchi.net//CSS/common.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page_sp.css" rel="stylesheet" type="text/css">
-  <link href="src/css/recruit.css?css=<?php echo rand() ;?>" rel="stylesheet" type="text/css">
+  <link href="<?php echo home_url(); ?>/src/css/recruit.css?css=<?php echo rand() ;?>" rel="stylesheet" type="text/css">
 
   <link rel='dns-prefetch' href='//s.w.org' />
   <link rel='stylesheet' id='wp-pagenavi-css' href='https://www.nonoguchi.net/wp-content/plugins/wp-pagenavi/pagenavi-css.css' type='text/css' media='all' />
   <script src='https://www.nonoguchi.net/wp-includes/js/jquery/jquery.js'></script>
   <script src='https://www.nonoguchi.net/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+  <?php wp_head(); ?>
 </head>
 
 <body id="recruit" class="under">
@@ -83,7 +89,7 @@
       <header class="header">
         <div class="inner">
           <div class="logo_area">
-            <div class="hdr_logo"><a href="https://www.nonoguchi.net/"><img src="src/img/h_logo.svg" alt="野々口株式会社"></a></div>
+            <div class="hdr_logo"><a href="https://www.nonoguchi.net/"><img src="<?php echo home_url(); ?>/src/img/h_logo.svg" alt="野々口株式会社"></a></div>
           </div>
           <div class="r_area">
             <nav id="gNavi" class="visible_pc">
@@ -140,20 +146,20 @@
             <div class="mv">
               <div class="container">
                 <div class="star">
-                  <span><img src="src/img/star-left.svg" alt=""></span>
-                  <span><img src="src/img/star-right.svg" alt=""></span>
+                  <span><img src="<?php echo home_url(); ?>/src/img/star-left.svg" alt=""></span>
+                  <span><img src="<?php echo home_url(); ?>/src/img/star-right.svg" alt=""></span>
                 </div>
-                <div class="main_logo" id="main_logo"><img src="src/img/main_logo.png" alt=""></div>
+                <div class="main_logo" id="main_logo"><img src="<?php echo home_url(); ?>/src/img/main_logo.png" alt=""></div>
                 <div class="cast">
-                  <span><img src="src/img/cast-01.png" alt=""></span>
-                  <span><img src="src/img/cast-02.png" alt=""></span>
-                  <span><img src="src/img/cast-03.png" alt=""></span>
-                  <span><img src="src/img/cast-04.png" alt=""></span>
+                  <span><img src="<?php echo home_url(); ?>/src/img/cast-01.png" alt=""></span>
+                  <span><img src="<?php echo home_url(); ?>/src/img/cast-02.png" alt=""></span>
+                  <span><img src="<?php echo home_url(); ?>/src/img/cast-03.png" alt=""></span>
+                  <span><img src="<?php echo home_url(); ?>/src/img/cast-04.png" alt=""></span>
                 </div>
                 <div class="copy_text">
-                  <span><img src="src/img/text-01.svg" alt="やりたいことをやろう"></span>
-                  <span><img src="src/img/text-02.svg" alt="なりたい人になろう"></span>
-                  <span><img src="src/img/text-03.svg" alt="自分の強みを生かそう"></span>
+                  <span><img src="<?php echo home_url(); ?>/src/img/text-01.svg" alt="やりたいことをやろう"></span>
+                  <span><img src="<?php echo home_url(); ?>/src/img/text-02.svg" alt="なりたい人になろう"></span>
+                  <span><img src="<?php echo home_url(); ?>/src/img/text-03.svg" alt="自分の強みを生かそう"></span>
                 </div>
                 
               </div>
@@ -186,7 +192,7 @@
                       明るい未来に向かって、我々と共に楽しみましょう。</p>
                   </div>
                   <div class="img-box">
-                    <img class="is-set rotateY" src="src/img/message-01.png" alt="">
+                    <img class="is-set rotateY" src="<?php echo home_url(); ?>/src/img/message-01.png" alt="">
                   </div>
                 </div>
               </section>
@@ -199,9 +205,9 @@
                 </div>
                 <div class="container">
                   <div class="img-box">
-                    <img src="src/img/message-02.png" alt="">
-                    <img class="is-set" src="src/img/message-03.png" alt="">
-                    <img class="is-set" src="src/img/message-04.png" alt="">
+                    <img src="<?php echo home_url(); ?>/src/img/message-02.png" alt="">
+                    <img class="is-set" src="<?php echo home_url(); ?>/src/img/message-03.png" alt="">
+                    <img class="is-set" src="<?php echo home_url(); ?>/src/img/message-04.png" alt="">
                   </div>
                   <div class="contetnts">
                     <ul class="text is-set">
@@ -349,7 +355,7 @@
                           <span><?php echo $value[0]; ?></span>
                         </p>
                         <div class="img">
-                          <img src="src/img/person-<?php echo $value[0]; ?>.jpg" alt="">
+                          <img src="<?php echo home_url(); ?>/src/img/person-<?php echo $value[0]; ?>.jpg" alt="">
                           <span class="position"><?php echo $value[1]; ?></span>
                         </div>
                         <p class="join"><?php echo $value[2]; ?>年入社</p>
@@ -361,7 +367,7 @@
                         foreach ($content[3] as $value) : ?>
                           <div class="inner">
                             <div class="img-box">
-                              <img src="src/img/person-<?php echo $content[0]; ?>_detail_<?php echo $i; ?>.jpg" alt="">
+                              <img src="<?php echo home_url(); ?>/src/img/person-<?php echo $content[0]; ?>_detail_<?php echo $i; ?>.jpg" alt="">
                             </div>
                             <div class="contents-box">
                               <h5><?php echo $value[0]; ?></h5>
@@ -390,24 +396,24 @@
 
                   <div class="contetnts">
                     <dl>
-                      <dd><span>年次有給休暇<br>取得率</span><span class="move"><span>67.6%</span></span><img src="src/img/icon-01.svg" alt=""></dd>
-                      <dd><img src="src/img/icon-02.svg" alt=""><span>年間休日</span><span class="move"><span>120</span></span><span class="strong">日以上</span></dd>
+                      <dd><span>年次有給休暇<br>取得率</span><span class="move"><span>67.6%</span></span><img src="<?php echo home_url(); ?>/src/img/icon-01.svg" alt=""></dd>
+                      <dd><img src="<?php echo home_url(); ?>/src/img/icon-02.svg" alt=""><span>年間休日</span><span class="move"><span>120</span></span><span class="strong">日以上</span></dd>
                     </dl>
                     <dl>
-                      <dd><span>中途入社実績</span><span class="move"><span>8</span></span><span class="strong">割超</span><img src="src/img/icon-03.svg" alt=""></dd>
-                      <dd><span>男女比率</span><span class="move"><span>2:1</span></span><img src="src/img/icon-04.svg" alt=""></dd>
-                      <dd><img src="src/img/icon-05.svg" alt=""><span>完全週休2日制</span><span class="move"><span>土日・祝日</span></span></dd>
+                      <dd><span>中途入社実績</span><span class="move"><span>8</span></span><span class="strong">割超</span><img src="<?php echo home_url(); ?>/src/img/icon-03.svg" alt=""></dd>
+                      <dd><span>男女比率</span><span class="move"><span>2:1</span></span><img src="<?php echo home_url(); ?>/src/img/icon-04.svg" alt=""></dd>
+                      <dd><img src="<?php echo home_url(); ?>/src/img/icon-05.svg" alt=""><span>完全週休2日制</span><span class="move"><span>土日・祝日</span></span></dd>
                     </dl>
                     <dl>
-                      <dd><img src="src/img/icon-06.svg" alt=""><span>定年後</span><span class="move"><span>再雇用<br>制度有</span></span></dd>
-                      <dd><img src="src/img/icon-07.svg" alt=""><span>業界</span><span class="move"><span>未経験可</span></span></dd>
-                      <dd><img src="src/img/icon-08.svg" alt=""><span>学歴・ 職歴</span><span class="move"><span>不問</span></span></dd>
-                      <dd><img src="src/img/icon-09.svg" alt=""><span class="move"><span>転勤</span></span><span>なし</span></dd>
+                      <dd><img src="<?php echo home_url(); ?>/src/img/icon-06.svg" alt=""><span>定年後</span><span class="move"><span>再雇用<br>制度有</span></span></dd>
+                      <dd><img src="<?php echo home_url(); ?>/src/img/icon-07.svg" alt=""><span>業界</span><span class="move"><span>未経験可</span></span></dd>
+                      <dd><img src="<?php echo home_url(); ?>/src/img/icon-08.svg" alt=""><span>学歴・ 職歴</span><span class="move"><span>不問</span></span></dd>
+                      <dd><img src="<?php echo home_url(); ?>/src/img/icon-09.svg" alt=""><span class="move"><span>転勤</span></span><span>なし</span></dd>
                     </dl>
                     <dl>
-                      <dd><span>平均勤続年数</span><span class="move"><span>11.4</span></span><span class="strong">年</span><img src="src/img/icon-10.svg" alt=""></dd>
-                      <dd><span>平均年齢</span><span class="move"><span>38.9</span></span><span>歳</span><img src="src/img/icon-11.svg" alt=""></dd>
-                      <dd><span class="move"><span>第２新卒</span></span><span>採用実績あり</span><img src="src/img/icon-12.svg" alt=""></dd>
+                      <dd><span>平均勤続年数</span><span class="move"><span>11.4</span></span><span class="strong">年</span><img src="<?php echo home_url(); ?>/src/img/icon-10.svg" alt=""></dd>
+                      <dd><span>平均年齢</span><span class="move"><span>38.9</span></span><span>歳</span><img src="<?php echo home_url(); ?>/src/img/icon-11.svg" alt=""></dd>
+                      <dd><span class="move"><span>第２新卒</span></span><span>採用実績あり</span><img src="<?php echo home_url(); ?>/src/img/icon-12.svg" alt=""></dd>
                     </dl>
                   </div>
                 </div>
@@ -420,7 +426,7 @@
                 </div>
                 <div class="container">
                   <div class="contetnts">
-                    <img class="icon" src="src/img/icon-14.png" alt="">
+                    <img class="icon" src="<?php echo home_url(); ?>/src/img/icon-14.png" alt="">
                     <dl>
                       <?php
                       $allowances = [
@@ -458,19 +464,19 @@
                     <p class="text">社内コミュニケーションの活性化は、組織の強化を促すだけでなく、新たなビジネスの創出にも繋がると考えています。弊社では、普段の業務で交流がなくても、お互いを知り、信頼関係を築き、結束を高められる機会があります。</p>
                   </div>
                   <div class="img-box">
-                    <img src="src/img/benefits-01.jpg" alt="">
+                    <img src="<?php echo home_url(); ?>/src/img/benefits-01.jpg" alt="">
                   </div>
                 </div>
                 <div class="container">
                   <dl>
-                    <dd class="is-set"><img src="src/img/btn.png" alt="">社会保険完備</dd>
-                    <dd class="is-set"><img src="src/img/btn.png" alt="">社員旅行</dd>
-                    <dd class="is-set"><img src="src/img/btn.png" alt="">退職金制度</dd>
-                    <dd class="is-set"><img src="src/img/btn.png" alt="">健康診断</dd>
-                    <dd class="is-set"><img src="src/img/btn.png" alt="">社員交流会<span>（食事会など/自由参加）</span></dd>
-                    <dd class="is-set"><img src="src/img/btn.png" alt="">分煙</dd>
-                    <dd class="is-set"><img src="src/img/btn.png" alt="">コーヒーサーバー<br>設置有</dd>
-                    <dd class="is-set"><img src="src/img/btn.png" alt="">服装自由<span>オフィスカジュアル、<br>髪型自由、ネイルOK</span></dd>
+                    <dd class="is-set"><img src="<?php echo home_url(); ?>/src/img/btn.png" alt="">社会保険完備</dd>
+                    <dd class="is-set"><img src="<?php echo home_url(); ?>/src/img/btn.png" alt="">社員旅行</dd>
+                    <dd class="is-set"><img src="<?php echo home_url(); ?>/src/img/btn.png" alt="">退職金制度</dd>
+                    <dd class="is-set"><img src="<?php echo home_url(); ?>/src/img/btn.png" alt="">健康診断</dd>
+                    <dd class="is-set"><img src="<?php echo home_url(); ?>/src/img/btn.png" alt="">社員交流会<span>（食事会など/自由参加）</span></dd>
+                    <dd class="is-set"><img src="<?php echo home_url(); ?>/src/img/btn.png" alt="">分煙</dd>
+                    <dd class="is-set"><img src="<?php echo home_url(); ?>/src/img/btn.png" alt="">コーヒーサーバー<br>設置有</dd>
+                    <dd class="is-set"><img src="<?php echo home_url(); ?>/src/img/btn.png" alt="">服装自由<span>オフィスカジュアル、<br>髪型自由、ネイルOK</span></dd>
                   </dl>
                 </div>
               </section>
@@ -485,7 +491,7 @@
             </div>
             <picture>
               <source srcset="src/img/bg_section7_sp.jpg" media="(max-width: 768px)" type="image/png">
-              <img src="src/img/bg_section7.jpg" alt=社内風景>
+              <img src="<?php echo home_url(); ?>/src/img/bg_section7.jpg" alt=社内風景>
             </picture>
           </section>
 
@@ -496,8 +502,8 @@
               <p class="lead is-set">募集要項</p>
             </div>
             <div class="container">
-              <img class="icon" src="src/img/req-01.png" alt="">
-              <img class="icon" src="src/img/req-02.png" alt="">
+              <img class="icon" src="<?php echo home_url(); ?>/src/img/req-01.png" alt="">
+              <img class="icon" src="<?php echo home_url(); ?>/src/img/req-02.png" alt="">
               <dl>
                 <dt>仕事内容</dt>
                 <dd>
@@ -645,51 +651,7 @@
 
             </div>
           </section>
-          <section class="section-form">
-            <span id="entry"></span>
-            <div class="container">
-            <div class="ttl_wrap">
-              <h2 class="ttl_01 is-set">ENTRY</h2>
-              <p class="lead is-set">応募フォーム</p>
-            </div>
-              <table class="cform">
-                <tbody>
-                  <tr>
-                    <th>名前 <span class="required-srt">[必須]</span></th>
-                    <td class="demo">[mwform_text name="お名前" size="60" placeholder="名前"]</td>
-                    <td><input type="text" size="60" placeholder="名前"></td>
-                  </tr>
-
-
-                  <tr>
-                    <th>電話番号 <span class="required-dec">[任意]</span></th>
-                    <td class="demo"><label for="tel">
-                      </label>[mwform_text name="電話" size="60" placeholder="電話番号"]
-                    </td>
-                    <td><input type="text" placeholder="電話番号"></td>
-                  </tr>
-                  <tr>
-                    <th>メールアドレス <span class="required-srt">[必須]</span></th>
-                    <td class="demo">[mwform_email name="メールアドレス" size="60" placeholder="メールアドレス"]</td>
-                    <td><input type="email" name="メールアドレス" id="" placeholder="メールアドレス"></td>
-                  </tr>
-
-                  <tr>
-                    <th>履歴書 <span class="required-dec">[任意]</span></th>
-                    <td class="demo">[mwform_file name="ファイル"]</td>
-                    <td><input type="file" name="メールアドレス" id=""></td>
-                  </tr>
-
-                </tbody>
-              </table>
-              <div class="form-btn_area">
-                <div class="submit-btn demo">[mwform_submitButton name="確認送信" confirm_value="確認画面へ進む" submit_value="送信する"]</div>
-                <form action="entry-confirm.php">
-                <div class="submit-btn"><input type="submit" value="確認画面へ進む"></div>
-                </form>
-              </div>
-            </div>
-          </section>
+         <?php echo do_shortcode('[mwform_formkey key="1845"]') ;?>
         </div>
       </div>
 
@@ -782,6 +744,7 @@
       </script>
     </div>
   </div>
+  <?php wp_footer(); ?>
 </body>
 
 </html>
