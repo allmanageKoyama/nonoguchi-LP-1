@@ -17,7 +17,16 @@
   <link rel="mask-icon" href="https://www.nonoguchi.net/favicon/safari-pinned-tab.svg" color="#040474">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
+<!-- グーグルアナリティクス2022.12.27hamawaki -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QKKY24VF37"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-QKKY24VF37');
+</script>
   <meta property="og:title" content="採用情報 | 野々口株式会社">
   <meta property="og:type" content="website">
   <meta property="og:description" content="「採用情報」ページです。野々口株式会社は、御客様のニーズ、時代の流れに対応出来るよう、体制を調えております。どのポジション（生地・製品）でも最適な提案を致します。">
@@ -387,7 +396,7 @@
                     <dl>
                       <dd><span>中途入社実績</span><span class="move"><span>8</span></span><span class="strong">割超</span><img src="src/img/icon-03.svg" alt=""></dd>
                       <dd><span>男女比率</span><span class="move"><span>2:1</span></span><img src="src/img/icon-04.svg" alt=""></dd>
-                      <dd><img src="src/img/icon-05.svg" alt=""><span>完全週休2日制</span><span class="move"><span>(土日) ・祝日</span></span></dd>
+                      <dd><img src="src/img/icon-05.svg" alt=""><span>完全週休2日制</span><span class="move"><span>土日・祝日</span></span></dd>
                     </dl>
                     <dl>
                       <dd><img src="src/img/icon-06.svg" alt=""><span>定年後</span><span class="move"><span>再雇用<br>制度有</span></span></dd>
