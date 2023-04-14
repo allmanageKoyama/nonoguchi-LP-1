@@ -1577,7 +1577,9 @@ header {
         object-fit: cover;
       }
       @media screen and (max-width: 440px) {
-        height: auto;
+        position: absolute;
+        top: auto;
+        bottom: 0;
       }
     }
     .ttl_wrap {
