@@ -14,7 +14,7 @@ header {
     transition: 1.5s;
     transition-delay: 1.5s;
     @media screen and (max-width: 1400px) {
-      @include pl(1400,40);
+      @include pl(1400, 40);
     }
     @media screen and (max-width: 991px) {
       opacity: 1;
@@ -40,7 +40,7 @@ header {
         width: fit-content;
         margin-left: 30px;
         @media screen and (max-width: 1400px) {
-          @include ml(1400,30);
+          @include ml(1400, 30);
         }
         a {
           display: flex;
@@ -48,7 +48,7 @@ header {
           color: $white;
           font-size: 16px;
           @media screen and (max-width: 1400px) {
-            @include fontsizeVw(1400,16);
+            @include fontsizeVw(1400, 16);
           }
           span {
             display: flex;
@@ -61,7 +61,7 @@ header {
           height: 100%;
           background-color: $white;
           @media screen and (max-width: 1400px) {
-            @include w_size(1400,250);
+            @include w_size(1400, 250);
           }
           a {
             display: flex;
@@ -72,7 +72,7 @@ header {
             font-family: Impact;
             letter-spacing: .05em;
             @media screen and (max-width: 1400px) {
-              @include fontsizeVw(1400,30);
+              @include fontsizeVw(1400, 30);
             }
             span {
               color: $blue;
@@ -130,9 +130,9 @@ header {
       min-height: 700px;
     }
     @media screen and (max-width: 440px) {
-      height: 100%;
+      height: 100vh;
       height: calc(100svh - 80px);
-      min-height: auto;
+      min-height: 145vw;
     }
     img {
       max-width: 100%;
@@ -189,7 +189,7 @@ header {
           @include pt(991, 25);
         }
         @media screen and (max-width: 768px) {
-          @include w_size(768,300);
+          @include w_size(768, 300);
         }
         @media screen and (max-width: 440px) {
           @include w_size(440, 200);
@@ -292,7 +292,6 @@ header {
           transition: .6s;
           transition-delay: 3.5s;
 
-
           img {
             transform: rotate(8deg) translateX(10svh);
             transition: .6s;
@@ -331,7 +330,6 @@ header {
             @media screen and (max-width: 600px) {
               transform: translateY(130%);
             }
-
 
             img {
               transition-delay: 3.9s;
@@ -580,7 +578,7 @@ header {
       position: absolute;
       top: -20svh;
       left: -3svh;
-      width: 660px;
+      width: calc(100% - 550px);
       @media screen and (max-width: 991px) {
         position: relative;
         top: 0;
@@ -603,11 +601,14 @@ header {
           width: 100%;
         }
         &:nth-of-type(2) {
+          @include w_size(2000, 300);
           position: absolute;
           bottom: 4svh;
           left: 0;
           z-index: 2;
-          width: 300px;
+          @media screen and (max-width: 1400px) {
+            @include w_size(1400, 300);
+          }
           @media screen and (max-width: 991px) {
             @include w_size(991, 200);
           }
@@ -626,11 +627,14 @@ header {
           }
         }
         &:nth-of-type(3) {
+          @include w_size(2000, 300);
           position: absolute;
           right: 2svh;
           bottom: 10svh;
           z-index: 2;
-          width: 300px;
+          @media screen and (max-width: 1400px) {
+            @include w_size(1400, 300);
+          }
           @media screen and (max-width: 991px) {
             @include w_size(991, 200);
           }
@@ -1272,7 +1276,8 @@ header {
     background-color: #98d2ff;
     @media screen and (max-width: 991px) {
       @include pt(768, 100);
-      padding-bottom: 0;
+
+@include pb(768, 100);
     }
     .icon {
       position: absolute;
@@ -1790,7 +1795,7 @@ header {
     .container {
       @media screen and (max-width: 440px) {
         width: 100%;
-        margin: 0 ;
+        margin: 0;
       }
     }
     .mw_wp_form input[type="email"], .mw_wp_form input[type="tel"], .mw_wp_form input[type="text"], .mw_wp_form textarea {
@@ -1806,9 +1811,7 @@ header {
     input[type="file"] {
       border: none;
     }
-    .mwform-file-delete {
-      display: none;
-    }
+
     /*――――「表」デザイン――――*/
 
     .cform tr {
@@ -1900,9 +1903,19 @@ header {
       display: flex;
       justify-content: center;
     }
+    .submit-btn input {
+      margin: 0 auto;
+      padding: 10px 35px;
+      border: 3px solid #1c2f6e;
+      background-color: #1c2f6e;
+      color: #ffffff;
+      font-weight: normal;
+      font-size: 1.3em;
+      text-align: center;
+      cursor: pointer;
+    }
 
     .submit-btn {
-      display: flex;
       margin-top: 20px;
       margin-right: 10px;
       margin-left: 10px;
@@ -1911,47 +1924,29 @@ header {
       &.demo {
         display: none;
       }
-      span {
-        padding-right: .5em;
-        padding-left: .5em;
+    }
+    .back-btn {
+      margin-top: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
+      text-align: center;
+      cursor: pointer;
+      &.demo {
+        display: none;
       }
       input {
-        margin-top: 20px;
-        margin-right: .5em;
-        margin-left: .5em;
+        margin: 0 auto;
         padding: 10px 35px;
-        border: 3px solid #1c2f6e;
-        background-color: #1c2f6e;
+        border: 3px solid #b9b3b3;
+        background-color: #b9b3b3;
         color: #ffffff;
         font-weight: normal;
         font-size: 1.3em;
         text-align: center;
         cursor: pointer;
-      }
-
-      .back-btn {
-        margin-top: 20px;
-        margin-right: 10px;
-        margin-left: 10px;
-        text-align: center;
-        cursor: pointer;
-        &.demo {
-          display: none;
-        }
-        input {
-          margin: 0 auto;
-          padding: 10px 35px;
-          border: 3px solid #b9b3b3;
-          background-color: #b9b3b3;
-          color: #ffffff;
-          font-weight: normal;
-          font-size: 1.3em;
-          text-align: center;
-          cursor: pointer;
-          &:hover {
-            background-color: #ffffff;
-            color: #b9b3b3;
-          }
+        &:hover {
+          background-color: #ffffff;
+          color: #b9b3b3;
         }
       }
     }
@@ -2059,7 +2054,7 @@ footer {
 }
 @media screen and (max-width: 440px) {
   ul.main_menu {
-    @include pt(440,70);
+    @include pt(440, 70);
     li {
       @include mb(440, 30);
       a {
