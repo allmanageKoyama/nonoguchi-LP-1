@@ -498,8 +498,8 @@ Template Name: 採用情報LPテーマ
           <section class="section-08">
           <span id="section-08"></span>
             <div class="ttl_wrap">
-              <h2 class="ttl_01 is-set">REQUIREMENTS</h2>
-              <p class="lead is-set">募集要項</p>
+              <h2 class="ttl_01 is-action">REQUIREMENTS</h2>
+              <p class="lead is-action">募集要項</p>
             </div>
             <div class="container">
               <img class="icon" src="<?php echo home_url(); ?>/src/img/req-01.png" alt="">
