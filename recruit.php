@@ -490,8 +490,8 @@ Template Name: 採用情報LPテーマ
               <p class="lead is-set">社内風景</p>
             </div>
             <picture>
-              <source srcset="src/img/bg_section7_sp.jpg" media="(max-width: 768px)" type="image/png">
-              <img src="<?php echo home_url(); ?>/src/img/bg_section7.jpg" alt=社内風景>
+              <source srcset="src/img/bg_section7.jpg" media="(min-width: 768px)" type="image/png">
+              <img src="<?php echo home_url(); ?>/src/img/bg_section7_sp.jpg" alt=社内風景>
             </picture>
           </section>
 
