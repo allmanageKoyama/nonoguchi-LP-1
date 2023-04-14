@@ -9,7 +9,7 @@ Template Name: 採用情報LPテーマ
 
 <head prefix="og: https://ogp.me/ns#">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=1,viewport-fit=cover">
   <meta name="format-detection" content="telephone=no">
 
   <title>採用情報 | 野々口株式会社</title>
