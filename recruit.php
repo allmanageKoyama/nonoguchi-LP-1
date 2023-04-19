@@ -1,7 +1,8 @@
 <?php
+
 /**
 Template Name: 採用情報LPテーマ
-***/
+ ***/
 ?>
 <!doctype html>
 
@@ -22,16 +23,19 @@ Template Name: 採用情報LPテーマ
   <link rel="mask-icon" href="https://www.nonoguchi.net/favicon/safari-pinned-tab.svg" color="#040474">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
-<!-- グーグルアナリティクス2022.12.27hamawaki -->
-<!-- Google tag (gtag.js) -->
-<script async src="/https://www.googletagmanager.com/gtag/js?id=G-QKKY24VF37"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- グーグルアナリティクス2022.12.27hamawaki -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="/https://www.googletagmanager.com/gtag/js?id=G-QKKY24VF37"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-QKKY24VF37');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QKKY24VF37');
+  </script>
   <meta property="og:title" content="採用情報 | 野々口株式会社">
   <meta property="og:type" content="website">
   <meta property="og:description" content="「採用情報」ページです。野々口株式会社は、御客様のニーズ、時代の流れに対応出来るよう、体制を調えております。どのポジション（生地・製品）でも最適な提案を致します。">
@@ -74,7 +78,7 @@ Template Name: 採用情報LPテーマ
   <link href="https://www.nonoguchi.net//CSS/common.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page_sp.css" rel="stylesheet" type="text/css">
-  <link href="<?php echo home_url(); ?>/src/css/recruit.css?css=<?php echo rand() ;?>" rel="stylesheet" type="text/css">
+  <link href="<?php echo home_url(); ?>/src/css/recruit.css?css=<?php echo rand(); ?>" rel="stylesheet" type="text/css">
 
   <link rel='dns-prefetch' href='//s.w.org' />
   <link rel='stylesheet' id='wp-pagenavi-css' href='https://www.nonoguchi.net/wp-content/plugins/wp-pagenavi/pagenavi-css.css' type='text/css' media='all' />
@@ -161,11 +165,11 @@ Template Name: 採用情報LPテーマ
                   <span><img src="<?php echo home_url(); ?>/src/img/text-02.svg" alt="なりたい人になろう"></span>
                   <span><img src="<?php echo home_url(); ?>/src/img/text-03.svg" alt="自分の強みを生かそう"></span>
                 </div>
-                
+
               </div>
               <div class="scrolldown is-action"><span>Scroll</span></div>
             </div>
-           
+
 
             <article>
               <section class="section-01">
@@ -489,14 +493,12 @@ Template Name: 採用情報LPテーマ
               <h2 class="ttl_01 is-action">COMPANY SCENERY</h2>
               <p class="lead is-action">社内風景</p>
             </div>
-            <picture>
-              <source srcset="src/img/bg_section7.jpg" media="(min-width: 768px)" type="image/png">
-              <img src="<?php echo home_url(); ?>/src/img/bg_section7_sp.jpg" alt=社内風景>
-            </picture>
+            <img class="sp" src="<?php echo home_url(); ?>/src/img/bg_section7_sp.jpg" alt=社内風景>
+            <img class="pc" src="<?php echo home_url(); ?>/src/img/bg_section7.jpg" alt=社内風景>
           </section>
 
           <section class="section-08">
-          <span id="section-08"></span>
+            <span id="section-08"></span>
             <div class="ttl_wrap">
               <h2 class="ttl_01 is-action">REQUIREMENTS</h2>
               <p class="lead is-action">募集要項</p>
@@ -651,7 +653,7 @@ Template Name: 採用情報LPテーマ
 
             </div>
           </section>
-         <?php echo do_shortcode('[mwform_formkey key="1845"]') ;?>
+          <?php echo do_shortcode('[mwform_formkey key="1845"]'); ?>
         </div>
       </div>
 
