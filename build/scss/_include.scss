@@ -1569,6 +1569,12 @@ header {
       z-index: -2;
       max-width: 100%;
       height: auto;
+      @media screen and (min-width: 440px) {
+        &.sp {
+          display: none;
+        }
+      }
+
       @media screen and (max-width: 991px) {
         top: auto;
         bottom: 0;
@@ -1577,9 +1583,16 @@ header {
         object-fit: cover;
       }
       @media screen and (max-width: 440px) {
-        position: absolute;
+        display: flex;
+        position: relative;
         top: auto;
         bottom: 0;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        &.pc {
+          display: none;
+        }
       }
     }
     .ttl_wrap {
@@ -2017,6 +2030,15 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+#footer {
+  .top_box {
+    .l_box {
+      @media screen and (max-width: 440px) {
+        width: 100%;
       }
     }
   }

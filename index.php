@@ -483,10 +483,8 @@
               <h2 class="ttl_01 is-action">COMPANY SCENERY</h2>
               <p class="lead is-action">社内風景</p>
             </div>
-            <picture>
-              <source srcset="src/img/bg_section7.jpg" media="(min-width: 768px)" type="image/png">
-              <img src="src/img/bg_section7_sp.jpg" alt=社内風景>
-            </picture>
+              <img class="sp" src="src/img/bg_section7_sp.jpg" alt=社内風景>
+              <img class="pc" src="src/img/bg_section7.jpg" alt=社内風景>
           </section>
 
           <section class="section-08">
