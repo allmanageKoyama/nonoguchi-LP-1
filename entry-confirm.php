@@ -60,7 +60,7 @@
   <link href="https://www.nonoguchi.net//CSS/common.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page_sp.css" rel="stylesheet" type="text/css">
-  <link href="src/css/recruit.css?css=11" rel="stylesheet" type="text/css">
+  <link href="src/css/recruit.css?css=12" rel="stylesheet" type="text/css">
 
   <link rel='dns-prefetch' href='//s.w.org' />
   <link rel='stylesheet' id='wp-pagenavi-css' href='https://www.nonoguchi.net/wp-content/plugins/wp-pagenavi/pagenavi-css.css' type='text/css' media='all' />
@@ -68,7 +68,7 @@
   <script src='https://www.nonoguchi.net/wp-includes/js/jquery/jquery-migrate.min.js'></script>
 </head>
 
-<body id="recruit" class="under">
+<body id="recruit" class="under confirm">
   <div class="drawer drawer--right">
     <div id="wrapper">
       <header class="header">
@@ -163,7 +163,7 @@
                 </tbody>
               </table>
               <form action="entry-thanks.php">
-              <div class="form-btn_area">
+              <div class="form-btn_area confirm-btn_area">
                 
                 <div class="submit-btn demo">[mwform_submitButton name="確認送信" confirm_value="確認画面へ進む" submit_value="送信する"]</div>
                 <div class="submit-btn"><input type="submit" value="送信する"></div>

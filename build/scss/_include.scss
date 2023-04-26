@@ -235,8 +235,9 @@ header {
               margin-right: 18svw;
             }
             @media screen and (max-width: 440px) {
-              @include mr(440, 100);
               margin-right: 20svw;
+
+@include mr(440, 100);
             }
             img {
               opacity: 0;
@@ -427,8 +428,9 @@ header {
     line-height: 2.2;
     font-family: "noto-sans-cjk-jp", sans-serif;
     @media screen and (max-width: 768px) {
-      @include fontsizeVw(440, 24);
       line-height: 1.6;
+
+@include fontsizeVw(440, 24);
     }
     @media screen and (max-width: 440px) {
       @include fontsizeVw(440, 18);
@@ -438,9 +440,10 @@ header {
       font-size: 36px;
       line-height: 1.8;
       @media screen and (max-width: 768px) {
-        @include fontsizeVw(440, 20);
         line-height: 1.6;
         text-align: justify;
+
+@include fontsizeVw(440, 20);
       }
     }
     &.is-set {
@@ -515,11 +518,12 @@ header {
         width: 470px;
         padding-left: 30px;
         @media screen and (max-width: 768px) {
-          @include pl(440, 30);
-
-@include pr(440, 30);
           transform: none;
           width: 100%;
+
+@include pl(440, 30);
+
+@include pr(440, 30);
         }
         img {
           max-width: 100%;
@@ -601,11 +605,13 @@ header {
           width: 100%;
         }
         &:nth-of-type(2) {
-          @include w_size(2000, 300);
           position: absolute;
           bottom: 4svh;
           left: 0;
           z-index: 2;
+
+@include w_size(2000, 300);
+
           @media screen and (max-width: 1400px) {
             @include w_size(1400, 300);
           }
@@ -627,11 +633,13 @@ header {
           }
         }
         &:nth-of-type(3) {
-          @include w_size(2000, 300);
           position: absolute;
           right: 2svh;
           bottom: 10svh;
           z-index: 2;
+
+@include w_size(2000, 300);
+
           @media screen and (max-width: 1400px) {
             @include w_size(1400, 300);
           }
@@ -723,24 +731,27 @@ header {
               top: 60px;
               left: calc(((100% - (27px * 3)) / 4) + 27px);
               @media screen and (max-width: 768px) {
-                @include top(440, 30);
                 left: calc(((100% - (1.302vw * 1)) / 2) + 1.302vw);
+
+@include top(440, 30);
               }
             }
             &:nth-of-type(3) {
               top: 120px;
               left: calc((((100% - (27px * 3)) / 4) + 27px) * 2);
               @media screen and (max-width: 768px) {
-                @include top(440, 370);
                 left: 0;
+
+@include top(440, 370);
               }
             }
             &:nth-of-type(4) {
               top: 180px;
               left: calc((((100% - (27px * 3)) / 4) + 27px) * 3);
               @media screen and (max-width: 768px) {
-                @include top(440, 400);
                 left: calc(((100% - (1.302vw * 1)) / 2) + 1.302vw);
+
+@include top(440, 400);
               }
             }
           }
@@ -768,8 +779,9 @@ header {
         transition: .8s;
         transition-timing-function: cubic-bezier(.3, .4, .1, 1);
         @media screen and (max-width: 768px) {
-          @include pb(440, 400);
           flex-wrap: wrap;
+
+@include pb(440, 400);
         }
       }
       .pnl {
@@ -898,15 +910,16 @@ header {
           @include ml(991, 200);
         }
         @media screen and (max-width: 768px) {
-          @include top(440, 200);
+          flex-direction: column;
+          margin-left: 0;
+
+@include top(440, 200);
 
 @include pl(440, 15);
 
 @include pr(440, 15);
 
 @include h_size(440, 600);
-          flex-direction: column;
-          margin-left: 0;
         }
         &.set {
           opacity: 1;
@@ -931,10 +944,11 @@ header {
           padding-top: 20px;
           padding-bottom: 50px;
           @media screen and (max-width: 768px) {
-            @include pt(440, 20);
+            flex-direction: column;
+
+@include pt(440, 20);
 
 @include pb(440, 20);
-            flex-direction: column;
           }
         }
         .img-box {
@@ -962,8 +976,9 @@ header {
             @include h_size(991, 400);
           }
           @media screen and (max-width: 768px) {
-            @include h_size(440, 50);
             padding-left: 0;
+
+@include h_size(440, 50);
           }
           h5 {
             margin-bottom: 20px;
@@ -1453,8 +1468,10 @@ header {
           font-family: "noto-sans-cjk-jp", sans-serif;
           text-align: center;
           @media screen and (max-width: 768px) {
-            @include fontsizeVw(440, 22);
             width: calc((100% - 3px) / 2);
+
+@include fontsizeVw(440, 22);
+
             &:not(:nth-of-type(2n)) {
               margin-right: 2px;
             }
@@ -1539,17 +1556,19 @@ header {
         width: 1000px;
         max-width: calc(100vw - (((100vw - 1200px) / 2) + 500px));
         @media screen and (max-width: 991px) {
-          @include w_size(991, 450);
+          width: 50%;
+
+@include w_size(991, 450);
 
 @include pl(991, 50);
-          width: 50%;
         }
         @media screen and (max-width: 768px) {
-          @include mb(440, 15);
           position: relative;
           top: 0;
           width: 100%;
           padding-left: 0;
+
+@include mb(440, 15);
         }
         img {
           max-width: 100%;
@@ -1596,13 +1615,15 @@ header {
       }
     }
     .ttl_wrap {
-      @include mt(2000, 160);
       position: fixed;
       top: 0;
       left: 50%;
       z-index: -1;
       transform: translateX(-50%);
       overflow: hidden;
+
+@include mt(2000, 160);
+
       @media screen and (max-width: 991px) {
         @include mt(991, 10);
       }
@@ -1719,10 +1740,11 @@ header {
         padding-top: 60px;
         padding-bottom: 60px;
         @media screen and (max-width: 440px) {
-          @include pt(440, 60);
+          flex-direction: column;
+
+@include pt(440, 60);
 
 @include pb(440, 60);
-          flex-direction: column;
         }
         &:not(:last-child) {
           border-bottom: 1px solid #707070;
@@ -1735,10 +1757,11 @@ header {
             @include w_size(440, 65);
           }
           @media screen and (max-width: 440px) {
-            @include fontsizeVw(440, 28);
+            width: 100%;
+
+@include fontsizeVw(440, 28);
 
 @include pb(440, 15);
-            width: 100%;
           }
         }
         dd {
@@ -1993,7 +2016,29 @@ header {
     }
   }
 }
+@media screen and (max-width: 550px) {
+  .confirm {
+    .form-btn_area {
+      flex-wrap: nowrap;
 
+      gap: 20px;
+      .submit-btn, .back-btn {
+        border-radius: 0;
+        input {
+          border-radius: 0;
+
+          -webkit-appearance: none;
+        }
+      }
+      .submit-btn {
+        display: flex;
+        .back-btn {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
 .mv-loaded {
   header {
     .inner {
