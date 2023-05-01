@@ -1948,12 +1948,15 @@ header {
       margin: 0 auto;
       padding: 10px 35px;
       border: 3px solid #1c2f6e;
+      border-radius: 0;
       background-color: #1c2f6e;
       color: #ffffff;
       font-weight: normal;
       font-size: 1.3em;
       text-align: center;
       cursor: pointer;
+
+      -webkit-appearance: none;
     }
 
     .submit-btn {
