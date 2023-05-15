@@ -140,7 +140,17 @@
             <div class="mv">
               <div class="container">
                 <div class="star">
-                  <span><img src="src/img/star-left.svg" alt=""></span>
+                  <span>
+                    <img src="src/img/star-left.svg" alt="">
+                    <img class="star-item star-01" src="src/img/star-01.svg" alt="">
+                    <img class="star-item star-02" src="src/img/star-02.svg" alt="">
+                    <img class="star-item star-03" src="src/img/star-03.svg" alt="">
+                    <img class="star-item star-04" src="src/img/star-04.svg" alt="">
+                    <img class="star-item star-05" src="src/img/star-05.svg" alt="">
+                    <img class="star-item star-06" src="src/img/star-06.svg" alt="">
+                    <img class="star-item star-07" src="src/img/star-07.svg" alt="">
+                    <img class="star-item star-08" src="src/img/star-08.svg" alt="">
+                  </span>
                   <span><img src="src/img/star-right.svg" alt=""></span>
                 </div>
                 <div class="main_logo" id="main_logo"><img src="src/img/main_logo.png" alt=""></div>

@@ -148,29 +148,26 @@ header {
         z-index: 1;
         width: 100%;
         span {
-          img {
-            transform: scale(0);
-            transition: .6s;
-            transition-timing-function: linear;
-            transition-delay: 3s;
-          }
+          transform: scale(0);
+          transition: .6s;
+          transition-timing-function: linear;
+          transition-delay: 3s;
+
           &:nth-of-type(1) {
             margin-right: auto;
             margin-left: 9svh;
+
+            transform-origin: right;
             @media screen and (max-width: 768px) {
               margin-left: 0;
-            }
-            img {
-              transform-origin: right;
             }
           }
           &:nth-of-type(2) {
             margin-right: 11svh;
+
+            transform-origin: left;
             @media screen and (max-width: 768px) {
               margin-right: 0;
-            }
-            img {
-              transform-origin: left;
             }
           }
         }
@@ -2065,8 +2062,57 @@ header {
         }
         .star {
           span {
+            position: relative;
+            transform: scale(1);
             img {
               transform: scale(1);
+            }
+            .star-item {
+              position: absolute;
+              animation-name: rotate;
+              animation-duration: 4s;
+              animation-timing-function: linear;
+              animation-iteration-count: infinite;
+            }
+            .star-01 {
+              top: 0;
+              left: 60%;
+            }
+            .star-02 {
+              top: 9%;
+              left: 25%;
+            }
+            .star-03 {
+              top: 21%;
+              left: 2%;
+            }
+            .star-04 {
+              top: 39%;
+              left: 56%;
+            }
+            .star-05 {
+              top: 49%;
+              left: 12%;
+            }
+            .star-06 {
+              top: 61%;
+              left: 42%;
+            }
+            .star-07 {
+              top: 76%;
+              left: 16%;
+            }
+            .star-08 {
+              top: 79%;
+              left: 79%;
+            }
+          }
+          @keyframes rotate {
+            0% {
+              transform: rotate(0);
+            }
+            100% {
+              transform: rotate(360deg);
             }
           }
         }
