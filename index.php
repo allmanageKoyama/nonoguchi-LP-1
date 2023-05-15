@@ -142,6 +142,7 @@
                 <div class="star">
                   <span>
                     <img src="src/img/star-left.svg" alt="">
+                    <img class="star-item star-00" src="src/img/star-00.svg" alt="">
                     <img class="star-item star-01" src="src/img/star-01.svg" alt="">
                     <img class="star-item star-02" src="src/img/star-02.svg" alt="">
                     <img class="star-item star-03" src="src/img/star-03.svg" alt="">
@@ -150,8 +151,22 @@
                     <img class="star-item star-06" src="src/img/star-06.svg" alt="">
                     <img class="star-item star-07" src="src/img/star-07.svg" alt="">
                     <img class="star-item star-08" src="src/img/star-08.svg" alt="">
+                    <img class="star-item star-09" src="src/img/star-09.svg" alt="">
+                    <img class="star-item star-10" src="src/img/star-10.svg" alt="">
                   </span>
-                  <span><img src="src/img/star-right.svg" alt=""></span>
+                  <span>
+                    <img src="src/img/star-right.svg" alt="">
+                    <img class="star-item star-11" src="src/img/star-11.svg" alt="">
+                    <img class="star-item star-12" src="src/img/star-12.svg" alt="">
+                    <img class="star-item star-13" src="src/img/star-13.svg" alt="">
+                    <img class="star-item star-14" src="src/img/star-14.svg" alt="">
+                    <img class="star-item star-15" src="src/img/star-15.svg" alt="">
+                    <img class="star-item star-16" src="src/img/star-16.svg" alt="">
+                    <img class="star-item star-17" src="src/img/star-17.svg" alt="">
+                    <img class="star-item star-18" src="src/img/star-18.svg" alt="">
+                    <img class="star-item star-19" src="src/img/star-19.svg" alt="">
+                    <img class="star-item star-20" src="src/img/star-20.svg" alt="">
+                  </span>
                 </div>
                 <div class="main_logo" id="main_logo"><img src="src/img/main_logo.png" alt=""></div>
                 <div class="cast">
