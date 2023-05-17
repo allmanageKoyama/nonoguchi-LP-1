@@ -718,7 +718,7 @@ Template Name: 採用情報LPテーマ
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
 
       <script>
-        $(window).on("load", function() {
+        $(window).on("ready", function() {
           $('body').addClass('mv-loaded')
         });
         $(".is-set").on("inview", function(event, isInView) {

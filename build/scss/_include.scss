@@ -151,7 +151,7 @@ header {
           transform: scale(0);
           transition: .6s;
           transition-timing-function: linear;
-          transition-delay: 3s;
+          transition-delay: 1.5s;
 
           &:nth-of-type(1) {
             margin-right: auto;
@@ -181,7 +181,7 @@ header {
         margin-left: auto;
         padding-top: 85px;
         transition: .6s;
-        transition-delay: 1s;
+        transition-delay: 0s;
         @media screen and (max-width: 991px) {
           @include pt(991, 25);
         }
@@ -209,25 +209,25 @@ header {
           transform: translateY(15svh);
           transition: .6s;
           transition-timing-function: cubic-bezier(0, 0, .26, 2.07);
-          transition-delay: 1.8s;
+          transition-delay: .9s;
           &:nth-of-type(1) {
             margin-right: 60px;
             margin-left: 10px;
             padding-top: 50px;
-            transition-delay: 2s;
+            transition-delay: 1s;
             @media screen and (max-width: 768px) {
               @include mr(440, 10);
             }
             img {
               opacity: 0;
               transition: .6s;
-              transition-delay: 2s;
+              transition-delay: 1s;
             }
           }
           &:nth-of-type(2) {
             margin-right: 300px;
             padding-top: 30px;
-            transition-delay: 1.8s;
+            transition-delay: .9s;
             @media screen and (max-width: 768px) {
               margin-right: 18svw;
             }
@@ -239,33 +239,33 @@ header {
             img {
               opacity: 0;
               transition: .6s;
-              transition-delay: 1.8s;
+              transition-delay: .9s;
             }
           }
           &:nth-of-type(3) {
             margin-right: 10px;
             padding-top: 30px;
-            transition-delay: 2.3s;
+            transition-delay: 1.2s;
             img {
               opacity: 0;
               transition: .6s;
-              transition-delay: 2.3s;
+              transition-delay: 1.2s;
             }
           }
           &:nth-of-type(4) {
             margin-right: 0;
             padding-top: 80px;
-            transition-delay: 1.6s;
+            transition-delay: .8s;
             img {
               opacity: 0;
               transition: .6s;
-              transition-delay: 1.6s;
+              transition-delay: .8s;
             }
           }
           img {
             opacity: 0;
             transition: .6s;
-            transition-delay: 1.8s;
+            transition-delay: .9s;
           }
         }
       }
@@ -288,20 +288,20 @@ header {
           width: 100%;
           text-align: center;
           transition: .6s;
-          transition-delay: 3.5s;
+          transition-delay: 1.8s;
 
           img {
             transform: rotate(8deg) translateX(10svh);
             transition: .6s;
             transition-timing-function: cubic-bezier(0, 0, .26, 2.07);
-            transition-delay: 3.5s;
+            transition-delay: 1.8s;
           }
           &:nth-of-type(1) {
             position: absolute;
             top: 0;
             left: 0;
             text-align: left;
-            transition-delay: 3.5s;
+            transition-delay: 1.8s;
           }
           &:nth-of-type(2) {
             position: absolute;
@@ -309,9 +309,9 @@ header {
             left: 0;
             transform: translateY(60%);
             text-align: center;
-            transition-delay: 3.7s;
+            transition-delay: 1.9s;
             img {
-              transition-delay: 3.7s;
+              transition-delay: 1.9s;
             }
           }
           &:nth-of-type(3) {
@@ -320,7 +320,7 @@ header {
             left: 0;
             transform: translateY(110%);
             text-align: right;
-            transition-delay: 3.9s;
+            transition-delay: 2s;
 
             @media screen and (max-width: 768px) {
               transform: translateY(115%);
@@ -330,7 +330,7 @@ header {
             }
 
             img {
-              transition-delay: 3.9s;
+              transition-delay: 2s;
             }
           }
         }
@@ -344,7 +344,7 @@ header {
       transform: translateX(-50%);
       height: 30px;
       transition: .8s;
-      transition-delay: 3.9s;
+      transition-delay: 2s;
       &.is-action {
         opacity: 1;
       }
