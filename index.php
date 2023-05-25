@@ -17,16 +17,19 @@
   <link rel="mask-icon" href="https://www.nonoguchi.net/favicon/safari-pinned-tab.svg" color="#040474">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
-<!-- グーグルアナリティクス2022.12.27hamawaki -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QKKY24VF37"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- グーグルアナリティクス2022.12.27hamawaki -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QKKY24VF37"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-QKKY24VF37');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QKKY24VF37');
+  </script>
   <meta property="og:title" content="採用情報 | 野々口株式会社">
   <meta property="og:type" content="website">
   <meta property="og:description" content="「採用情報」ページです。野々口株式会社は、御客様のニーズ、時代の流れに対応出来るよう、体制を調えております。どのポジション（生地・製品）でも最適な提案を致します。">
@@ -69,7 +72,7 @@
   <link href="https://www.nonoguchi.net//CSS/common.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page.css" rel="stylesheet" type="text/css">
   <link href="https://www.nonoguchi.net//CSS/page_sp.css" rel="stylesheet" type="text/css">
-  <link href="src/css/recruit.css?css=<?php echo rand() ;?>" rel="stylesheet" type="text/css">
+  <link href="src/css/recruit.css?css=<?php echo rand(); ?>" rel="stylesheet" type="text/css">
 
   <link rel='dns-prefetch' href='//s.w.org' />
   <link rel='stylesheet' id='wp-pagenavi-css' href='https://www.nonoguchi.net/wp-content/plugins/wp-pagenavi/pagenavi-css.css' type='text/css' media='all' />
@@ -180,11 +183,11 @@
                   <span><img src="src/img/text-02.svg" alt="なりたい人になろう"></span>
                   <span><img src="src/img/text-03.svg" alt="自分の強みを生かそう"></span>
                 </div>
-                
+
               </div>
               <div class="scrolldown is-action"><span>Scroll</span></div>
             </div>
-           
+
 
             <article>
               <section class="section-01">
@@ -508,12 +511,12 @@
               <h2 class="ttl_01 is-action">COMPANY SCENERY</h2>
               <p class="lead is-action">社内風景</p>
             </div>
-              <img class="sp" src="src/img/bg_section7_sp.jpg" alt=社内風景>
-              <img class="pc" src="src/img/bg_section7.jpg" alt=社内風景>
+            <img class="sp" src="src/img/bg_section7_sp.jpg" alt=社内風景>
+            <img class="pc" src="src/img/bg_section7.jpg" alt=社内風景>
           </section>
 
           <section class="section-08">
-          <span id="section-08"></span>
+            <span id="section-08"></span>
             <div class="ttl_wrap">
               <h2 class="ttl_01 is-set">REQUIREMENTS</h2>
               <p class="lead is-set">募集要項</p>
@@ -671,10 +674,10 @@
           <section class="section-form">
             <span id="entry"></span>
             <div class="container">
-            <div class="ttl_wrap">
-              <h2 class="ttl_01 is-set">ENTRY</h2>
-              <p class="lead is-set">応募フォーム</p>
-            </div>
+              <div class="ttl_wrap">
+                <h2 class="ttl_01 is-set">ENTRY</h2>
+                <p class="lead is-set">応募フォーム</p>
+              </div>
               <table class="cform">
                 <tbody>
                   <tr>
@@ -708,7 +711,7 @@
               <div class="form-btn_area">
                 <div class="submit-btn demo">[mwform_submitButton name="確認送信" confirm_value="確認画面へ進む" submit_value="送信する"]</div>
                 <form action="entry-confirm.php">
-                <div class="submit-btn"><input type="submit" value="確認画面へ進む"></div>
+                  <div class="submit-btn"><input type="submit" value="確認画面へ進む"></div>
                 </form>
               </div>
             </div>
